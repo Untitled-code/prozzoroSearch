@@ -49,18 +49,9 @@ def driverGet(link):
 
 
 def findLinks(bs): #parsing links
-
+    print(bs)
     divs = bs.find_all('div', {'class': 'search-result-card__title'})
     print(divs)
-    # lastNum = len(div) - 1
-    # tag = div[lastNum].get_text()
-    # print(f"Get the new tag: {tag}")
-    # logging.debug(f"Get the new tag: {tag}")
-    # regex = re.compile(r'\d{4}')
-    # regexVar = regex.search(str(tag))
-    # number = regexVar.group()
-    print(f"New number used in the site is:{tag}")
-    return tag
 
 bs = driverGet(link)
 findLinks(bs)
