@@ -9,9 +9,6 @@ import shelve
 import logging
 from pathlib import Path
 import csv
-import smtplib
-from email.mime.text import MIMEText # для работы с кириллицей
-from email.header import Header
 ''' since update of Firefox new conditions for webdriver'''
 from selenium import webdriver
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
@@ -19,7 +16,6 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.firefox.options import Options
 
 # from fake_useragent import UserAgent
-# binary = FirefoxBinary(r'/usr/bin/firefox')
 caps = DesiredCapabilities.FIREFOX.copy()
 caps['marionette'] = True
 # hide window of Webdriver
@@ -36,6 +32,7 @@ options.add_argument('--headless')
 ''' end of webdriver'''
 
 link = 'https://prozorro.gov.ua/search/tender?cpv=32230000-4&cpv=51310000-8&cpv=35120000-1&sort=publication_date,desc&status=complete&value.start=10000&value.end=&tender.start=2023-01-01&tender.end=2023-12-01'
+id_values = []
 
 def driverGet(link):
     driver = webdriver.Firefox(options=options)  # hide window of webdriver
@@ -50,18 +47,19 @@ def driverGet(link):
 
 
 def findLinks(bs): #parsing links
-    print(bs)
-    # # Find all elements with the class 'search-result-card__description'
-    # description_elements = bs.find_all(class_='search-result-card__description')
-    #
-    # # Extract and print the ID values
-    # id_values = [element.text.strip().split("ID: ")[1] for element in description_elements]
-    #
-    # # Print the list of ID values
-    # print(id_values)
-    #
-    # divs = bs.find_all('div', {'class': 'search-result-card__title'})
-    # print(divs)
+    # Find all elements with the class 'search-result-card__description'
+    description_elements = soup.find_all(class_='search-result-card__description')
+
+    # Extract and print the ID values
+    for element in description_elements:
+        id_text = element.find(string=lambda text: text and "ID:" in text)
+        if id_text:
+            id_values.append(id_text.replace("ID:", "").strip())
+        else:
+            print("N/A")
+
+    # Print the list of ID values
+    print(id_values)
 
 bs = driverGet(link)
 findLinks(bs)
