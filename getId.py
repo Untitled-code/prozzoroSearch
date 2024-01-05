@@ -65,4 +65,4 @@ def findLinks(bs): #parsing links
     return tag
 
 bs = driverGet(link)
-findLink(bs)
+findLinks(bs)
