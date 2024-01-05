@@ -1,0 +1,618 @@
+<html lang="uk"><head>
+<title>Головна | Prozorro </title>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport"/>
+<meta content="AGyyjqjb4JOObta9PxPeaZ90rPBlyLyNTEZrTOvE" name="csrf-token"/>
+<link as="font" href="//fonts.googleapis.com" rel="preload"/>
+<link href="https://prozorro.gov.ua/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="//fonts.gstatic.com" rel="dns-prefetch"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Nunito&amp;display=swap" rel="stylesheet" type="text/css"/>
+<link href="/css/app.css?id=4e5a8b43f7b6763ef6bbe9f8531e37b2" rel="stylesheet"/>
+<script async="" src="https://www.google-analytics.com/analytics.js" type="text/javascript"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-MC0SEBR8LE&amp;l=dataLayer&amp;cx=c" type="text/javascript"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-R1T2GHH7NS&amp;l=dataLayer&amp;cx=c" type="text/javascript"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WQ46WMM"></script><script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push(
+                {'gtm.start': new Date().getTime(), event: 'gtm.js'}
+            );
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WQ46WMM');
+    </script>
+<style>.tabs[data-v-21b89605]{--bg:var(--gray);--bg-mobile:var(--gray);--bg-active-tab:var(--gray);--color-active-tab:var(--black)}.tabs--light[data-v-21b89605]{--bg:var(--white);--bg-active-tab:var(--white);--bg-mobile:var(--white)}.tabs__nav[data-v-21b89605]{align-items:center;display:flex;list-style:none;margin:0;padding:0}.tabs__item[data-v-21b89605]{border-radius:3px 3px 0 0;color:var(--blue-100);cursor:pointer;font-size:var(--size-s);font-weight:600;padding:12px 24px}.tabs__item.active[data-v-21b89605]{background-color:var(--bg-active-tab);color:var(--color-active-tab)}.tabs__content[data-v-21b89605]{background-color:var(--bg)}@media screen and (max-width:768px){.tabs[data-v-21b89605]{background-color:var(--bg-mobile)}.tabs__nav[data-v-21b89605]{display:inline-block}.tabs__item[data-v-21b89605]{border:1px solid var(--gray-100);border-radius:0 3px 3px 0}.tabs__item.active[data-v-21b89605]{background-color:var(--white)}}</style><style>.tender-info__heading[data-v-f8eceb7e]{align-items:center;display:flex;justify-content:space-between;position:relative}.tender-info__heading-content[data-v-f8eceb7e]{margin-top:15px}.tender-info__content[data-v-f8eceb7e]{margin-top:25px}.tender-info__content .tender-list[data-v-f8eceb7e]{margin-bottom:25px}</style><style>.link[data-v-55ea5b0e],.link-blank__text[data-v-55ea5b0e]{word-wrap:break-word;color:var(--gray-200);cursor:pointer;font-size:var(--size-s);-webkit-hyphens:auto;hyphens:auto;line-height:var(--size-m);overflow-wrap:break-word;text-decoration:none}.link-blank__text[data-v-55ea5b0e]:hover,.link[data-v-55ea5b0e]:hover{color:var(--blue);text-decoration:underline}.link--black[data-v-55ea5b0e]{color:var(--black)}.link--blue[data-v-55ea5b0e],.link-blank--doc .link-blank__text[data-v-55ea5b0e],.link-blank--law .link-blank__text[data-v-55ea5b0e]{color:var(--blue-100)}.link--style-italic[data-v-55ea5b0e]{font-style:italic}.link--style-normal[data-v-55ea5b0e]{font-style:normal}.link--icon[data-v-55ea5b0e]{color:var(--blue-100)}.link--icon[data-v-55ea5b0e]:hover{text-decoration:none}.link--icon-bordered[data-v-55ea5b0e]{background-color:var(--gray-300);border-radius:3px}.link .material-icons[data-v-55ea5b0e],.link-blank__text .material-icons[data-v-55ea5b0e]{display:inline-flex;vertical-align:top}.link-blank[data-v-55ea5b0e]{--align-items:center;align-items:var(--align-items);display:inline-flex;text-decoration:none}.link-blank[data-v-55ea5b0e]:not(.disabled):hover{color:var(--blue)}.link-blank:not(.disabled):hover .link-blank__text[data-v-55ea5b0e]{color:var(--blue);text-decoration:underline}.link-blank__text[data-v-55ea5b0e]:hover{text-decoration:none}.link-blank--default[data-v-55ea5b0e]{color:var(--gray-200);display:inline-block}.link-blank--default .link-blank__icon[data-v-55ea5b0e]{margin-left:.25em;position:relative;top:2px}.link-blank--default .link-blank__text[data-v-55ea5b0e]{display:inline;font-style:italic}.link-blank--doc[data-v-55ea5b0e]{color:var(--blue-100);font-weight:600}.link-blank--doc .link-blank__icon[data-v-55ea5b0e]{margin-right:.5em;order:-1}.link-blank--law[data-v-55ea5b0e]{color:var(--blue-100)}.link-blank--law .link-blank__icon[data-v-55ea5b0e]{margin-left:.25em}.link-blank--line-through[data-v-55ea5b0e]{color:var(--gray-200);text-decoration:line-through}.link-blank.large .link-blank__icon[data-v-55ea5b0e],.link-blank.large .link-blank__text[data-v-55ea5b0e]{font-size:var(--size-l)}.link-blank.block[data-v-55ea5b0e]{display:block}.link-blank.align-start[data-v-55ea5b0e]{--align-items:flex-start}</style><style>.accordion__transition[data-v-72395f9e]{height:0;overflow:hidden;transition-property:height;transition-timing-function:ease}.accordion__content[data-v-72395f9e]{width:100%}</style><style>.accordion[data-v-0a6e1bcd]{border-bottom:1px solid var(--gray-100);border-top:1px solid var(--gray-100)}.accordion--no-bottom-border[data-v-0a6e1bcd]{border-bottom-width:0}.accordion--no-top-border[data-v-0a6e1bcd]{border-top-width:0}.accordion--clear .accordion__trigger-label[data-v-0a6e1bcd]{font-weight:400}.accordion--proposal .accordion__trigger-label[data-v-0a6e1bcd]{align-items:center;display:flex;flex-grow:0;justify-content:flex-start;width:740px}.accordion--proposal .accordion__trigger-wrapper[data-v-0a6e1bcd]{justify-content:flex-start}.accordion--blue[data-v-0a6e1bcd]{border-width:0;margin-bottom:24px;margin-top:24px}.accordion--blue .accordion__trigger[data-v-0a6e1bcd]{margin-bottom:.5em;padding:0;width:auto}.accordion--blue .accordion__trigger-label[data-v-0a6e1bcd]{color:var(--blue-100)}.accordion--blue .accordion__trigger-wrapper[data-v-0a6e1bcd]{width:auto}.accordion--blue .accordion__trigger[data-v-0a6e1bcd]:after{border-bottom:1px solid var(--blue-100);border-right:1px solid var(--blue-100);height:7px;margin-left:.5em;width:7px}.accordion--hover-indicatior .accordion__trigger[data-v-0a6e1bcd]:not(.active):hover{background-color:hsla(0,0%,58%,.1)}.accordion__trigger[data-v-0a6e1bcd]{align-items:center;-webkit-appearance:none;-moz-appearance:none;appearance:none;background:none;border:none;display:flex;justify-content:space-between;outline:none;padding:16px 10px 16px 0;width:100%}.accordion__trigger.active[data-v-0a6e1bcd]:after{transform:translateY(2px) rotate(225deg)}.accordion__trigger.extendable[data-v-0a6e1bcd]{cursor:pointer}.accordion__trigger.extendable[data-v-0a6e1bcd]:after{content:""}.accordion__trigger[data-v-0a6e1bcd]:after{border-bottom:1px solid var(--gray-200);border-right:1px solid var(--gray-200);height:11px;transform:translateY(-2px) rotate(45deg);transition:transform .3s ease;width:11px}.accordion__trigger-wrapper[data-v-0a6e1bcd]{align-items:center;display:flex;justify-content:space-between;width:calc(100% - 15px)}.accordion__trigger-wrapper.table[data-v-0a6e1bcd]{display:table}.accordion__trigger-label[data-v-0a6e1bcd]{align-items:center;display:flex;flex-grow:1;font-size:var(--size-s);font-weight:600;text-align:left}.accordion__trigger-label.table[data-v-0a6e1bcd]{display:table-cell;padding:0 4px 0 8px}</style><style>.tender-date[data-v-7ce607ff]{align-items:center;display:inline-flex;font-size:var(--size-s)}.tender-date i[data-v-7ce607ff]{background-color:var(--blue-100);border-radius:50%;height:4px;margin-left:8px;margin-right:8px;width:4px}</style><style>.paginate[data-v-44f93913]{--btn-size:4em;justify-content:space-between;list-style:none;margin:0;padding-left:0}.paginate[data-v-44f93913],.paginate__btn[data-v-44f93913]{align-items:center;display:flex}.paginate__btn[data-v-44f93913]{background-color:transparent;border:1px solid transparent;color:var(--gray-500);height:var(--btn-size);justify-content:center;min-width:var(--btn-size);outline:none;text-align:center;transition:all .3s}.paginate__btn[data-v-44f93913]:not(.not-active):hover{background-color:var(--gray-700);color:var(--blue-100);cursor:pointer}.paginate__btn.next[data-v-44f93913],.paginate__btn.prev[data-v-44f93913]{background-position:50%;background-repeat:no-repeat;background-size:100%;border:1px solid var(--blue-200);border-radius:3px;display:inline-block}.paginate__btn.prev[data-v-44f93913]{background-image:url(/img/icons/arrow-prev.svg)}.paginate__btn.next[data-v-44f93913]{background-image:url(/img/icons/arrow-next.svg)}.paginate__btn.active[data-v-44f93913]{border-color:var(--blue-200)}.paginate__visible--desktop[data-v-44f93913]{display:none}.paginate__visible--mobile[data-v-44f93913]{display:list-item}.paginate__d-none[data-v-44f93913]{display:none!important}@media screen and (min-width:768px){.paginate__visible--desktop[data-v-44f93913]{display:list-item}.paginate__visible--mobile[data-v-44f93913]{display:none}.paginate__btn.next[data-v-44f93913],.paginate__btn.prev[data-v-44f93913]{border-color:transparent}}@media screen and (min-width:1024px){.paginate[data-v-44f93913]{--btn-size:32px;justify-content:flex-start}}</style><style>.tender-docs[data-v-131ab517]{padding:24px}.tender-docs__list[data-v-131ab517]{list-style:none;margin:0;padding:0}.tender-docs__item[data-v-131ab517]{display:flex;flex-direction:column}@media screen and (min-width:768px){.tender-docs__item[data-v-131ab517]{align-items:start;flex-direction:row;justify-content:space-between}}.tender-docs__link[data-v-131ab517]{-webkit-hyphens:auto;hyphens:auto;max-width:350px;word-break:break-word}.tender-docs__hint[data-v-131ab517]{width:60%}.tender-docs__date[data-v-131ab517]{min-width:35%;text-align:right}</style><style>.tender-list--clear .tender-list__title[data-v-4f4f9993]:after{display:none}.tender-list__item[data-v-4f4f9993]{display:flex;font-size:var(--size-s);-webkit-hyphens:auto;hyphens:auto;overflow-wrap:break-word;word-break:break-word}.tender-list__item+.tender-list__item[data-v-4f4f9993]:not(.tender-list__item--overall){margin-top:20px}.tender-list__item--overall[data-v-4f4f9993]{margin-top:35px}.tender-list__item--overall .tender-list__link[data-v-4f4f9993]{font-weight:600}@media screen and (max-width:1024px){.tender-list__item[data-v-4f4f9993]{flex-direction:column}}.tender-list__title[data-v-4f4f9993]{flex:0 0 var(--tender-list-title-width);font-size:inherit;font-weight:600;height:-moz-fit-content;height:fit-content;margin:0;position:relative;width:var(--tender-list-title-width)}.tender-list__title-box[data-v-4f4f9993]{background-color:var(--white);-webkit-box-decoration-break:clone;box-decoration-break:clone;position:relative;z-index:2}.tender-list__title[data-v-4f4f9993]:after{border-bottom:1px dotted var(--gray-100);content:"";display:inline-block;height:100%;left:0;position:absolute;top:-2px;width:100%;z-index:0}@media screen and (max-width:1024px){.tender-list__title[data-v-4f4f9993]{flex:0 0 auto;width:auto}.tender-list__title[data-v-4f4f9993]:after{display:none}}.tender-list__content[data-v-4f4f9993]{display:flex;flex-direction:column;font-size:inherit;justify-content:flex-end;margin-left:8px}@media screen and (max-width:1024px){.tender-list__content[data-v-4f4f9993]{margin-left:0;margin-top:8px}}.tender-list__link[data-v-4f4f9993]{align-items:center;color:var(--blue-100);display:flex;font-weight:400;text-decoration:none}.tender-list__link[data-v-4f4f9993]:hover{text-decoration:underline}.tender-list__link span[data-v-4f4f9993]{margin-left:5px}</style><style>@media screen and (max-width:1024px){.submit-proposal__list-wrapper[data-v-56f6b548]{overflow-x:auto}.submit-proposal__list-wrapper[data-v-56f6b548]::-webkit-scrollbar{height:4px}.submit-proposal__list-wrapper[data-v-56f6b548]::-webkit-scrollbar-track{border-bottom:1px solid var(--gray-100)}.submit-proposal__list-wrapper[data-v-56f6b548]::-webkit-scrollbar-thumb{background:var(--blue-200)}}.submit-proposal__list[data-v-56f6b548]{align-items:center;display:flex;flex-wrap:wrap;list-style:none;max-width:920px;padding-left:0}@media screen and (max-width:1024px){.submit-proposal__list[data-v-56f6b548]{flex-wrap:nowrap;max-width:none}}.submit-proposal__item[data-v-56f6b548]{padding-bottom:44px;padding-right:32px}@media screen and (max-width:1024px){.submit-proposal__item[data-v-56f6b548]{min-width:125px;padding:8px;text-align:center}}.submit-proposal__img[data-v-56f6b548]{display:inline-block;max-height:52px;width:auto}</style><style>.table__th[data-v-10970ae4]{color:var(--black);font-size:var(--size-s);font-weight:700;padding:12px 8px;text-align:left}.table__th[data-v-10970ae4]:first-child{padding-left:0}.table__th[data-v-10970ae4]:last-child{padding-right:0}.table__th__info[data-v-10970ae4]{flex:0 0 20px;margin-left:10px}</style><style>.table__td[data-v-6f5d69ae]{display:block;-webkit-hyphens:auto;hyphens:auto;padding:8px;vertical-align:top;word-break:break-word}.table__td--title[data-v-6f5d69ae]{align-items:center;color:var(--black);display:flex;font-size:var(--size-s);font-weight:600;justify-content:space-between;padding-bottom:5px}@media screen and (max-width:1024px){.table__td[data-v-6f5d69ae]{width:auto!important}}@media screen and (min-width:1024px){.table__td[data-v-6f5d69ae]{display:table-cell;padding:24px 4px 24px 8px}.table__td--title[data-v-6f5d69ae]{display:none}}</style><style>.table[data-v-01aa3bdc]{border-collapse:collapse;border-spacing:0;color:var(--black);font-size:var(--size-s);width:100%}.table__head[data-v-01aa3bdc]{left:-9999px;position:absolute;top:-9999px}@media screen and (min-width:1024px){.table__head[data-v-01aa3bdc]{position:static}}.table__row[data-v-01aa3bdc]{display:flex;flex-direction:column;padding:1em 0}.table__row--border-up[data-v-01aa3bdc]{border-top:1px solid var(--gray-100)}@media screen and (min-width:1024px){.table__row[data-v-01aa3bdc]{display:table-row}}</style><style>.accordion-table[data-v-48bf3d3c]{border-collapse:collapse;border-spacing:0;color:var(--black);font-size:var(--size-s);width:100%}.accordion-table__head[data-v-48bf3d3c]{left:-9999px;position:absolute;top:-9999px}@media screen and (min-width:1024px){.accordion-table__head[data-v-48bf3d3c]{position:static}}.accordion-table__row[data-v-48bf3d3c]{display:flex;flex-direction:column;padding:1em 0;position:relative}.accordion-table__row--border-up[data-v-48bf3d3c]{border-top:1px solid var(--gray-100)}@media screen and (min-width:1024px){.accordion-table__row[data-v-48bf3d3c]{display:table-row}}@media screen and (max-width:1024px){.accordion-table__td--first-col[data-v-48bf3d3c]{padding-right:50px}.accordion-table__td--btn[data-v-48bf3d3c]{position:absolute;right:0;top:14px;width:50px!important}}</style><style>.contact-point__subject[data-v-0152e8f3]{word-wrap:break-word;font-size:var(--size-s);-webkit-hyphens:auto;hyphens:auto;overflow-wrap:break-word}.contact-point.head .contact-point__subject[data-v-0152e8f3]{color:var(--green)}</style><style>.copy__btn[data-v-8a83d23a]{text-align:left}</style><style>.price[data-v-5ce3146a]{--label-size:var(--size-s);--amount-size:inherit;--currency-size:inherit}.price__label[data-v-5ce3146a]{color:var(--gray-200);font-size:var(--label-size);line-height:20px;margin:8px 0}.price__amount[data-v-5ce3146a]{font-size:var(--amount-size);line-height:1;margin:0}.price__currency[data-v-5ce3146a]{font-size:var(--currency-size)}.price.large[data-v-5ce3146a]{--amount-size:var(--size-xxl);--currency-size:var(--size-s)}@media screen and (max-width:1200px){.price.large[data-v-5ce3146a]{--amount-size:var(--size-xl)}}.price.medium[data-v-5ce3146a]{--amount-size:var(--size-xl)}.price.small[data-v-5ce3146a]{--amount-size:var(--size-l)}</style><style>.tender-docs[data-v-e58f7096]{padding:24px}.tender-docs__list[data-v-e58f7096]{list-style:none;margin:0;padding:0}.tender-docs__item[data-v-e58f7096]{display:flex;flex-direction:column}@media screen and (min-width:768px){.tender-docs__item[data-v-e58f7096]{align-items:start;flex-direction:row;justify-content:space-between}}.tender-docs__text[data-v-e58f7096]{cursor:pointer;-webkit-hyphens:auto;hyphens:auto;margin:0;word-break:break-word}.tender-docs__text[data-v-e58f7096]:hover{color:var(--gray-200)}.tender-docs__text.line-through[data-v-e58f7096]{color:var(--gray-200);text-decoration:line-through}.tender-docs__date[data-v-e58f7096]{min-width:35%;text-align:right}</style><style>.offer-details__hr[data-v-5dc752a2]{border:none;border-top:1px solid var(--gray-100);margin:12px 24px 34px}.offer-details__td[data-v-5dc752a2]{border-bottom:1px solid var(--gray-100);padding:15px 35px 15px 15px}</style><style>.bid__trigger[data-v-3f6f72dc]{display:flex;text-align:left;width:100%}.bid__tenderer[data-v-3f6f72dc]{width:60%}.bid__offer[data-v-3f6f72dc]{padding-left:10px;width:20%}.bid__tab--big-padding[data-v-3f6f72dc]{padding:44px 24px}</style><style>.protocol-proposal__trigger[data-v-89be0e22]{text-align:left;width:100%}@media screen and (min-width:1024px){.protocol-proposal__trigger[data-v-89be0e22]{align-items:center;display:flex}}.protocol-proposal__tenderer[data-v-89be0e22]{margin-bottom:.5em}@media screen and (min-width:1024px){.protocol-proposal__tenderer[data-v-89be0e22]{margin-bottom:0;width:50%}}.protocol-proposal__code[data-v-89be0e22]{margin-bottom:.5em}@media screen and (min-width:1024px){.protocol-proposal__code[data-v-89be0e22]{margin-bottom:0;padding-left:10px;width:30%}}</style><style>.disclosure-protocol__trigger[data-v-5d7ecf9e]{text-align:left;width:100%}@media screen and (min-width:1024px){.disclosure-protocol__trigger[data-v-5d7ecf9e]{display:flex}}.disclosure-protocol__supplier[data-v-5d7ecf9e]{margin-bottom:.5em}@media screen and (min-width:1024px){.disclosure-protocol__supplier[data-v-5d7ecf9e]{margin-bottom:0;margin-right:5%;width:50%}}.disclosure-protocol__price[data-v-5d7ecf9e]{margin-bottom:.5em}@media screen and (min-width:1024px){.disclosure-protocol__price[data-v-5d7ecf9e]{margin-bottom:0;width:30%}}.disclosure-protocol__status[data-v-5d7ecf9e]{height:auto;margin-bottom:.5em}@media screen and (min-width:1024px){.disclosure-protocol__status[data-v-5d7ecf9e]{margin-bottom:0;width:15%}}</style><link href="https://www.googletagmanager.com" rel="preconnect"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-73774371-1&amp;l=dataLayer"></script><style>.plans-exporter[data-v-5dd2ff21]{align-items:center;display:inline-flex;justify-content:space-between;position:relative;width:100%}.plans-exporter__hint[data-v-5dd2ff21]{margin-left:15px}.plans-exporter__popup[data-v-5dd2ff21]{align-items:center;background-color:var(--white);border:1px solid var(--orange);border-radius:3px;bottom:120%;box-shadow:0 1px 8px rgba(239,148,0,.35);color:var(--orange);display:flex;font-size:12px;justify-content:space-between;left:50%;margin-right:-50%;padding:1em;position:absolute;transform:translate(-50%);z-index:99}.plans-exporter__title[data-v-5dd2ff21]{font-weight:700}.plans-exporter__text[data-v-5dd2ff21]{color:var(--black)}.plans-exporter__text[data-v-5dd2ff21],.plans-exporter__title[data-v-5dd2ff21]{margin:0}.plans-exporter__btn[data-v-5dd2ff21]{padding:.5em;width:auto}@media screen and (min-width:1024px){.plans-exporter[data-v-5dd2ff21]{justify-content:flex-start;width:auto}.plans-exporter__popup[data-v-5dd2ff21]{width:315px}}</style><style>.url-tabs[data-v-1b0c97fa]{display:flex;list-style:none;margin:0;padding-left:0;width:100%}.url-tabs__item[data-v-1b0c97fa]{cursor:pointer;position:relative;transition:.1s;z-index:1}.url-tabs__item.disabled[data-v-1b0c97fa]{opacity:.5;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.url-tabs__default .url-tabs__item[data-v-1b0c97fa]{color:var(--blue-100);font-size:var(--size-s);font-weight:600;padding:12px 24px}.url-tabs__default .url-tabs__item[data-v-1b0c97fa]:hover{color:var(--blue)}.url-tabs__default .url-tabs__item.active[data-v-1b0c97fa]{background-color:var(--white);color:var(--black);font-weight:700}@media screen and (max-width:768px){.url-tabs__default[data-v-1b0c97fa]{display:inline-block}.url-tabs__default .url-tabs__item[data-v-1b0c97fa]{border:1px solid var(--white);border-radius:0 3px 3px 0;text-align:center}.url-tabs__default .url-tabs__text[data-v-1b0c97fa]{left:50%;margin-right:-50%;transform:translate(-50%)}}.url-tabs__search .url-tabs__item[data-v-1b0c97fa]{align-items:center;border-radius:3px 3px 0 0;box-shadow:0 0 1px rgba(0,0,0,.25);color:var(--blue-100);display:flex;font-size:var(--size-m);font-weight:600;justify-content:center;line-height:1.5;margin-top:8px;padding:8px 26px;text-align:center}.url-tabs__search .url-tabs__item[data-v-1b0c97fa]:hover{color:var(--blue)}.url-tabs__search .url-tabs__item.active[data-v-1b0c97fa]{background-color:#fff;box-shadow:none;color:var(--black);cursor:default;margin-top:0;padding-top:16px;z-index:2}.url-tabs__search .url-tabs__item.active[data-v-1b0c97fa]:hover{color:var(--black);cursor:pointer}.url-tabs__search .url-tabs__item.router-link-exact-active[data-v-1b0c97fa]:hover{cursor:default}@media screen and (max-width:768px){.url-tabs__search .url-tabs__item[data-v-1b0c97fa]{display:list-item;white-space:nowrap}.url-tabs__search[data-v-1b0c97fa]{overflow-x:scroll}}</style><style>.loader[data-v-9578f234]{--size:80px;--scale:1;--color:#6dc8eb;align-items:center;display:flex;justify-content:center;z-index:99}.loader.small[data-v-9578f234]{--scale:0.6;height:calc(var(--size)/2)}.loader.gray[data-v-9578f234]{--color:#939393}.loader__wrapper[data-v-9578f234]{color:var(--color);display:inline-block;height:var(--size);position:relative;transform:scale(var(--scale));width:var(--size)}.loader__item[data-v-9578f234]{animation:loader-spinner-data-v-9578f234 1.2s linear infinite;transform-origin:calc(var(--size)/2) calc(var(--size)/2)}.loader__item[data-v-9578f234]:after{background:var(--color);border-radius:20%;content:" ";display:block;height:15px;left:38px;position:absolute;top:10px;width:6px}.loader__item[data-v-9578f234]:first-child{animation-delay:-1.1s;transform:rotate(0deg)}.loader__item[data-v-9578f234]:nth-child(2){animation-delay:-1s;transform:rotate(30deg)}.loader__item[data-v-9578f234]:nth-child(3){animation-delay:-.9s;transform:rotate(60deg)}.loader__item[data-v-9578f234]:nth-child(4){animation-delay:-.8s;transform:rotate(90deg)}.loader__item[data-v-9578f234]:nth-child(5){animation-delay:-.7s;transform:rotate(120deg)}.loader__item[data-v-9578f234]:nth-child(6){animation-delay:-.6s;transform:rotate(150deg)}.loader__item[data-v-9578f234]:nth-child(7){animation-delay:-.5s;transform:rotate(180deg)}.loader__item[data-v-9578f234]:nth-child(8){animation-delay:-.4s;transform:rotate(210deg)}.loader__item[data-v-9578f234]:nth-child(9){animation-delay:-.3s;transform:rotate(240deg)}.loader__item[data-v-9578f234]:nth-child(10){animation-delay:-.2s;transform:rotate(270deg)}.loader__item[data-v-9578f234]:nth-child(11){animation-delay:-.1s;transform:rotate(300deg)}.loader__item[data-v-9578f234]:nth-child(12){animation-delay:0s;transform:rotate(330deg)}@keyframes loader-spinner-data-v-9578f234{0%{opacity:1}to{opacity:0}}</style><meta content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9" http-equiv="origin-trial"/><meta content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9" http-equiv="origin-trial"/></head>
+<body>
+<noscript>
+<iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-WQ46WMM" style="display:none;visibility:hidden" width="0"></iframe>
+</noscript>
+<main id="app">
+<div class="notification__wrapper" id="modal-browser-not-support">
+<div class="row">
+<table>
+<tbody><tr>
+<td>
+                        На жаль, версія вашого браузера застаріла, тому фільтри на порталі можуть не відображатись або не працювати. Оновіть, будь ласка, ваш браузер для коректної роботи пошуку. Детальніше про мінімальні вимоги до версій браузера за <a class="search-result-card__title" href="page/browser-not-support" title="Browser not support">посиланням</a>.
+                    </td>
+<td>
+<button class="search-preview__item--btn" id="btn-browser-not-support" type="button"></button>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+<div class="bg-color-gray-600"><header class="page-header"><div class="row"><input class="page-header__switcher" id="burger-switcher" type="checkbox"/> <div class="page-header__row"><span class="page-header__logo"><a class="link link--black router-link-active" href="/"><img alt="Логотип Прозорро" class="page-header__logo-img" src="/img/logo/logo.svg"/></a></span> <!-- --> <div class="page-header__social page-header__social--desktop"><div class="page-header__lang"><button class="btn btn--link">
+                        УКР
+                    </button><button class="btn btn--transparent">
+                        ENG
+                    </button></div> <div class="social"><ul class="social__list"><li class="social__item"><a class="social__link social__link_tg" href="https://t.me/tendernya" target="_blank"></a></li><li class="social__item"><a class="social__link social__link_yt" href="https://www.youtube.com/channel/UCI-2twjrz8C4dYiQXDGZf5g" target="_blank"></a></li><li class="social__item"><a class="social__link social__link_fb" href="https://www.facebook.com/prozorro.gov.ua" target="_blank"></a></li></ul></div></div> <div class="page-header__tel__wrapper"><div class="page-header__tel__label">
+                    Служба підтримки
+                </div> <a class="page-header__tel" href="tel:0800503400">0 800 503-400</a></div> <a class="page-header__tel-mobile" href="tel:0800503400"></a> <label class="page-header__burger" for="burger-switcher"><span class="page-header__burger-line"></span></label></div> <div class="page-header__row"><nav class="page-header__nav"><span><a class="link link--black page-header__link" href="https://prozorro.gov.ua/news">
+                    Новини
+                </a></span><span><a class="link link--black page-header__link" href="https://prozorro.gov.ua/ProzorroMarket">
+                    Prozorro Market
+                </a></span><span><a class="link link--black page-header__link" href="https://infobox.prozorro.org/">
+                    Інфобокс
+                </a></span><span><a class="link link--black page-header__link" href="https://exam.prozorro.gov.ua/entry">
+                    Тестування уповноважених осіб
+                </a></span><span><a class="link link--black page-header__link" href="https://prozorro.gov.ua/page/localisation">
+                    Локалізація
+                </a></span></nav> <a class="page-header__sign-in" href="/about-registration">Зареєструватися</a> <div class="page-header__social page-header__social--mobile"><div class="social"><ul class="social__list"><li class="social__item"><a class="social__link social__link_tg" href="https://t.me/tendernya" target="_blank"></a></li><li class="social__item"><a class="social__link social__link_yt" href="https://www.youtube.com/channel/UCI-2twjrz8C4dYiQXDGZf5g" target="_blank"></a></li><li class="social__item"><a class="social__link social__link_fb" href="https://www.facebook.com/prozorro.gov.ua" target="_blank"></a></li></ul></div></div></div></div></header> <section class="section"><div class="row"><header class="section__heading"></header> <div class="section__content"><div class="section__content"><!-- --> <div class="search"><ul class="url-tabs url-tabs__search" data-v-1b0c97fa=""><li class="url-tabs__item router-link-active active" data-v-1b0c97fa=""><span class="url-tabs__text" data-v-1b0c97fa="">
+                Тендери
+            </span></li><li class="url-tabs__item" data-v-1b0c97fa=""><span class="url-tabs__text" data-v-1b0c97fa="">
+                Плани
+            </span></li><li class="url-tabs__item" data-v-1b0c97fa=""><span class="url-tabs__text" data-v-1b0c97fa="">
+                Відбори
+            </span></li><li class="url-tabs__item" data-v-1b0c97fa=""><span class="url-tabs__text" data-v-1b0c97fa="">
+                Товари
+            </span></li></ul> <div class="search__content"><form class="search-text"><input class="search-text__input" placeholder="Назва або код товару, номер закупівлі, назва або ЄДРПОУ компанії" type="text"/> <div class="search-text__nav"><!-- --> <button class="btn search-text__btn" type="submit"><span class="visually-hidden">Пошук</span></button></div></form> <div class="search-filters"><div class="search-filters__content"><div class="search-filters__filters"><div class="search-filters__filters-item"><div><label class="filter-btn" for="buyer">Замовник</label> <!-- --></div></div><div class="search-filters__filters-item"><div><label class="filter-btn" for="tenderer">Учасник</label> <!-- --></div></div><div class="search-filters__filters-item"><div><label class="filter-btn" for="procuringEntity">Закупівельник</label> <!-- --></div></div><div class="search-filters__filters-item"><div><label class="filter-btn" for="cpv">ДК021:2015</label> <!-- --></div></div><div class="search-filters__filters-item"><div><label class="filter-btn" for="status">Статус</label> <!-- --></div></div><div class="search-filters__filters-item"><div><label class="filter-btn" for="proc_type">Вид закупівлі</label> <!-- --></div></div><div class="search-filters__filters-item"><div><label class="filter-btn" for="region">Регіон</label> <!-- --></div></div> <div class="switcher search-filters__filters-item"><input class="switcher__input" id="switcher" type="checkbox"/> <label class="filter-btn switcher__label" for="switcher">
+        Усі фільтри
+    </label></div></div> <div class="plans-exporter search-filters__plans-exporter" data-v-5dd2ff21="" style="display: none;"><!-- --> <button class="btn btn--main-outline" data-v-5dd2ff21="" disabled="disabled"><span data-v-5dd2ff21="">Завантажити плани</span> <svg class="ml-2" data-v-5dd2ff21="" fill="none" height="13" width="12" xmlns="http://www.w3.org/2000/svg"><path d="M11.25 4.75h-3V.25h-4.5v4.5h-3L6 10l5.25-5.25zM.75 11.5V13h10.5v-1.5H.75z" fill="currentColor"></path></svg></button> <span class="ml-4" data-v-5dd2ff21=""><div class="v-popper info-popup mobile-hidden v-popper--theme-tooltip"><img alt="help" class="img info-popup__img" src="/img/icons/help.svg"/> </div> <div class="v-popper info-popup desktop-hidden v-popper--theme-dropdown"><img alt="help" class="img info-popup__img" src="/img/icons/help.svg"/> </div></span></div></div> <div><ul class="search-preview"><li class="search-preview__item"><p class="search-preview__text"><b>32230000-4</b> – Апаратура для передавання радіосигналу з приймальним пристроєм</p> <button class="search-preview__btn" type="button"></button></li><li class="search-preview__item"><p class="search-preview__text"><b>51310000-8</b> – Послуги зі встановлення радіо-, телевізійної, аудіо- та відеоапаратури</p> <button class="search-preview__btn" type="button"></button></li><li class="search-preview__item"><p class="search-preview__text"><b>35120000-1</b> – Системи та пристрої нагляду та охорони</p> <button class="search-preview__btn" type="button"></button></li><li class="search-preview__item"><p class="search-preview__text">Завершена</p> <button class="search-preview__btn" type="button"></button></li></ul> <footer class="search-preview__footer"><button class="search-filters__link">
+                Показати усі обрані фільтри (ще 2)
+            </button> <button class="search-preview__clear"><span class="search-preview__close-icon"></span>
+            Скинути фільтри
+        </button></footer></div></div></div></div></div></div></div></section> <div class="bg-color-gray-600"><section class="section pt-0 pb-0" style=""><div class="row"><div class="search-result"><header><div class="search-result__heading-row search-result__heading-row_d_f"><p class="search-result__heading-info">
+                                Знайдено  514 тендерів
+                            </p> <div class="select"><p class="select__label">
+        Сортування:
+        <span class="select__text c_info">
+            дата публікації – новіші
+        </span></p> <div class="select__content" style="display: none;"><div class="select__element" type="button">
+            за замовчуванням
+        </div><div class="select__element active" type="button">
+            дата публікації – новіші
+        </div><div class="select__element" type="button">
+            дата публікації – старіші
+        </div><div class="select__element" type="button">
+            зростання вартості
+        </div><div class="select__element" type="button">
+            зменшення вартості
+        </div></div></div></div></header> <div class="search-result__content"><ul class="search-result__list"><li class="search-result__item"><div class="search-result-card"><div class="search-result-card__row"><div class="search-result-card__col search-result-card__col_first"><div><a class="search-result-card__title" href="/tender/UA-2023-11-24-013396-a">
+        Камери відеоспостереження (вуличні)
+    </a> <!-- --></div> <p class="search-result-card__label"><span class="c_success">Завершена</span> <span></span></p> <div class="search-result-card__description">
+                Головне управління Пенсійного фонду України в Дніпропетровській області
+                 • 
+                Дніпро
+            </div> <!-- --> <p class="search-result-card__description">
+            ID: UA-2023-11-24-013396-a
+        </p></div> <div class="search-result-card__col search-result-card__col_second"><div class="price medium" data-v-5ce3146a=""><p class="price__label" data-v-5ce3146a="">
+        Очікувана вартість
+    </p> <p class="price__amount c_success" data-v-5ce3146a="">
+            120 000,00
+            <span class="price__currency" data-v-5ce3146a="">
+                UAH
+
+                <!-- --></span></p></div> <div class="search-result-card__block"><p class="search-result-card__label">
+                    Уточнення до
+                </p> <p class="search-result-card__text">
+                    29 лист. 00:00
+                </p> <p class="search-result-card__label">
+                    Оголошено
+                </p> <p class="search-result-card__label">
+                    24 лист. 2023
+                </p></div></div></div></div></li><li class="search-result__item"><div class="search-result-card"><div class="search-result-card__row"><div class="search-result-card__col search-result-card__col_first"><div><a class="search-result-card__title" href="/tender/UA-2023-11-24-011426-a">
+        Ретранслятор, DMR, UHF/VHF, дисплей, 64 кан., 50 Вт, Motorola Mototrbo SLR 5500, код за ДК 021:2015:32230000-4: Апаратура для передавання радіосигналу з приймальним пристроєм
+    </a> <!-- --></div> <p class="search-result-card__label"><span class="c_success">Завершена</span> <span></span></p> <div class="search-result-card__description">
+                КОМУНАЛЬНЕ ПІДПРИЄМСТВО "БЛАГОУСТРІЙ МІСТА ІЗЮМА"
+                
+                
+            </div> <!-- --> <p class="search-result-card__description">
+            ID: UA-2023-11-24-011426-a
+        </p></div> <div class="search-result-card__col search-result-card__col_second"><div class="price medium" data-v-5ce3146a=""><p class="price__label" data-v-5ce3146a="">
+        Очікувана вартість
+    </p> <p class="price__amount c_success" data-v-5ce3146a="">
+            180 000,00
+            <span class="price__currency" data-v-5ce3146a="">
+                UAH
+
+                <!-- --></span></p></div> <div class="search-result-card__block"><!-- --> <!-- --></div></div></div></div></li><li class="search-result__item"><div class="search-result-card"><div class="search-result-card__row"><div class="search-result-card__col search-result-card__col_first"><div><a class="search-result-card__title" href="/tender/UA-2023-11-24-011025-a">
+        Апаратура для передавання радіосигналу з приймальним пристроєм
+    </a> <!-- --></div> <p class="search-result-card__label"><span class="c_success">Завершена</span> <span></span></p> <div class="search-result-card__description">
+                Бучанська міська рада
+                 • 
+                Буча
+            </div> <!-- --> <p class="search-result-card__description">
+            ID: UA-2023-11-24-011025-a
+        </p></div> <div class="search-result-card__col search-result-card__col_second"><div class="price medium" data-v-5ce3146a=""><p class="price__label" data-v-5ce3146a="">
+        Очікувана вартість
+    </p> <p class="price__amount c_success" data-v-5ce3146a="">
+            170 000,00
+            <span class="price__currency" data-v-5ce3146a="">
+                UAH
+
+                <!-- --></span></p></div> <div class="search-result-card__block"><!-- --> <!-- --></div></div></div></div></li><li class="search-result__item"><div class="search-result-card"><div class="search-result-card__row"><div class="search-result-card__col search-result-card__col_first"><div><a class="search-result-card__title" href="/tender/UA-2023-11-24-006590-a">
+        32230000-4, Апаратура для передавання радіосигналу з приймальним пристроєм (ретранслятор)"
+    </a> <!-- --></div> <p class="search-result-card__label"><span class="c_success">Завершена</span> <span></span></p> <div class="search-result-card__description">
+                Виконавчий комітет Криворізької міської ради
+                 • 
+                КРИВИЙ РІГ
+            </div> <!-- --> <p class="search-result-card__description">
+            ID: UA-2023-11-24-006590-a
+        </p></div> <div class="search-result-card__col search-result-card__col_second"><div class="price medium" data-v-5ce3146a=""><p class="price__label" data-v-5ce3146a="">
+        Очікувана вартість
+    </p> <p class="price__amount c_success" data-v-5ce3146a="">
+            170 000,00
+            <span class="price__currency" data-v-5ce3146a="">
+                UAH
+
+                <!-- --></span></p></div> <div class="search-result-card__block"><p class="search-result-card__label">
+                    Уточнення до
+                </p> <p class="search-result-card__text">
+                    29 лист. 00:00
+                </p> <p class="search-result-card__label">
+                    Оголошено
+                </p> <p class="search-result-card__label">
+                    24 лист. 2023
+                </p></div></div></div></div></li><li class="search-result__item"><div class="search-result-card"><div class="search-result-card__row"><div class="search-result-card__col search-result-card__col_first"><div><a class="search-result-card__title" href="/tender/UA-2023-11-23-014027-a">
+        Портативна радіостанція AnyTone AT-D878UV та автомобільна радіостанція AnyTone AT-D578UV в комплекті
+    </a> <!-- --></div> <p class="search-result-card__label"><span class="c_success">Завершена</span> <span></span></p> <div class="search-result-card__description">
+                Макарівська селищна рада
+                 • 
+                смт. Макарів
+            </div> <!-- --> <p class="search-result-card__description">
+            ID: UA-2023-11-23-014027-a
+        </p></div> <div class="search-result-card__col search-result-card__col_second"><div class="price medium" data-v-5ce3146a=""><p class="price__label" data-v-5ce3146a="">
+        Очікувана вартість
+    </p> <p class="price__amount c_success" data-v-5ce3146a="">
+            605 000,00
+            <span class="price__currency" data-v-5ce3146a="">
+                UAH
+
+                <!-- --></span></p></div> <div class="search-result-card__block"><p class="search-result-card__label">
+                    Уточнення до
+                </p> <p class="search-result-card__text">
+                    28 лист. 00:00
+                </p> <p class="search-result-card__label">
+                    Оголошено
+                </p> <p class="search-result-card__label">
+                    23 лист. 2023
+                </p></div></div></div></div></li><li class="search-result__item"><div class="search-result-card"><div class="search-result-card__row"><div class="search-result-card__col search-result-card__col_first"><div><a class="search-result-card__title" href="/tender/UA-2023-11-23-009408-a">
+        Біспектральна (тепловізійна) ІР-система позиціювання
+    </a> <!-- --></div> <p class="search-result-card__label"><span class="c_success">Завершена</span> <span></span></p> <div class="search-result-card__description">
+                Військова частина 1493 (94 прикордонний загін)
+                
+                
+            </div> <!-- --> <p class="search-result-card__description">
+            ID: UA-2023-11-23-009408-a
+        </p></div> <div class="search-result-card__col search-result-card__col_second"><div class="price medium" data-v-5ce3146a=""><p class="price__label" data-v-5ce3146a="">
+        Очікувана вартість
+    </p> <p class="price__amount c_success" data-v-5ce3146a="">
+            1 000 000,00
+            <span class="price__currency" data-v-5ce3146a="">
+                UAH
+
+                <!-- --></span></p></div> <div class="search-result-card__block"><p class="search-result-card__label">
+                    Уточнення до
+                </p> <p class="search-result-card__text">
+                    28 лист. 00:00
+                </p> <p class="search-result-card__label">
+                    Оголошено
+                </p> <p class="search-result-card__label">
+                    23 лист. 2023
+                </p></div></div></div></div></li><li class="search-result__item"><div class="search-result-card"><div class="search-result-card__row"><div class="search-result-card__col search-result-card__col_first"><div><a class="search-result-card__title" href="/tender/UA-2023-11-23-005096-a">
+        Арочні металодетектори
+    </a> <!-- --></div> <p class="search-result-card__label"><span class="c_success">Завершена</span> <span></span></p> <div class="search-result-card__description">
+                ТЕРИТОРІАЛЬНЕ УПРАВЛІННЯ ДЕРЖАВНОЇ СУДОВОЇ АДМІНІСТРАЦІЇ УКРАЇНИ В ЛЬВІВСЬКІЙ ОБЛАСТІ
+                 • 
+                Львів
+            </div> <!-- --> <p class="search-result-card__description">
+            ID: UA-2023-11-23-005096-a
+        </p></div> <div class="search-result-card__col search-result-card__col_second"><div class="price medium" data-v-5ce3146a=""><p class="price__label" data-v-5ce3146a="">
+        Очікувана вартість
+    </p> <p class="price__amount c_success" data-v-5ce3146a="">
+            620 000,00
+            <span class="price__currency" data-v-5ce3146a="">
+                UAH
+
+                <!-- --></span></p></div> <div class="search-result-card__block"><p class="search-result-card__label">
+                    Уточнення до
+                </p> <p class="search-result-card__text">
+                    28 лист. 00:00
+                </p> <p class="search-result-card__label">
+                    Оголошено
+                </p> <p class="search-result-card__label">
+                    23 лист. 2023
+                </p></div></div></div></div></li><li class="search-result__item"><div class="search-result-card"><div class="search-result-card__row"><div class="search-result-card__col search-result-card__col_first"><div><a class="search-result-card__title" href="/tender/UA-2023-11-23-001015-a">
+        Послуги з побудови, створення і впровадження системи відеоспостереження
+    </a> <!-- --></div> <p class="search-result-card__label"><span class="c_success">Завершена</span> <span></span></p> <div class="search-result-card__description">
+                ГЕРЦАЇВСЬКА МІСЬКА РАДА ЧЕРНІВЕЦЬКОГО РАЙОНУ ЧЕРНІВЕЦЬКОЇ ОБЛАСТІ
+                 • 
+                Герца
+            </div> <!-- --> <p class="search-result-card__description">
+            ID: UA-2023-11-23-001015-a
+        </p></div> <div class="search-result-card__col search-result-card__col_second"><div class="price medium" data-v-5ce3146a=""><p class="price__label" data-v-5ce3146a="">
+        Очікувана вартість
+    </p> <p class="price__amount c_success" data-v-5ce3146a="">
+            1 189 669,80
+            <span class="price__currency" data-v-5ce3146a="">
+                UAH
+
+                <!-- --></span></p></div> <div class="search-result-card__block"><p class="search-result-card__label">
+                    Уточнення до
+                </p> <p class="search-result-card__text">
+                    28 лист. 00:00
+                </p> <p class="search-result-card__label">
+                    Оголошено
+                </p> <p class="search-result-card__label">
+                    23 лист. 2023
+                </p></div></div></div></div></li><li class="search-result__item"><div class="search-result-card"><div class="search-result-card__row"><div class="search-result-card__col search-result-card__col_first"><div><a class="search-result-card__title" href="/tender/UA-2023-11-22-017485-a">
+        Апаратура для передавання радіосигналу з приймальним пристроєм
+    </a> <!-- --></div> <p class="search-result-card__label"><span class="c_success">Завершена</span> <span></span></p> <div class="search-result-card__description">
+                Управління Служби безпеки України в Житомирській області
+                 • 
+                Житомир
+            </div> <!-- --> <p class="search-result-card__description">
+            ID: UA-2023-11-22-017485-a
+        </p></div> <div class="search-result-card__col search-result-card__col_second"><div class="price medium" data-v-5ce3146a=""><p class="price__label" data-v-5ce3146a="">
+        Очікувана вартість
+    </p> <p class="price__amount c_success" data-v-5ce3146a="">
+            595 000,00
+            <span class="price__currency" data-v-5ce3146a="">
+                UAH
+
+                <!-- --></span></p></div> <div class="search-result-card__block"><p class="search-result-card__label">
+                    Уточнення до
+                </p> <p class="search-result-card__text">
+                    27 лист. 00:00
+                </p> <p class="search-result-card__label">
+                    Оголошено
+                </p> <p class="search-result-card__label">
+                    22 лист. 2023
+                </p></div></div></div></div></li><li class="search-result__item"><div class="search-result-card"><div class="search-result-card__row"><div class="search-result-card__col search-result-card__col_first"><div><a class="search-result-card__title" href="/tender/UA-2023-11-22-017478-a">
+        «Модернізація системи відеоспостереження в приміщеннях ВП №1 Лубенського РВП ГУНП в Полтавській області за адресою: м.Пирятин, вул. Зоряна,7»
+    </a> <!-- --></div> <p class="search-result-card__label"><span class="c_success">Завершена</span> <span></span></p> <div class="search-result-card__description">
+                Головне управління Національної поліції в Полтавській області
+                 • 
+                м. Полтава
+            </div> <!-- --> <p class="search-result-card__description">
+            ID: UA-2023-11-22-017478-a
+        </p></div> <div class="search-result-card__col search-result-card__col_second"><div class="price medium" data-v-5ce3146a=""><p class="price__label" data-v-5ce3146a="">
+        Очікувана вартість
+    </p> <p class="price__amount c_success" data-v-5ce3146a="">
+            423 375,70
+            <span class="price__currency" data-v-5ce3146a="">
+                UAH
+
+                <!-- --></span></p></div> <div class="search-result-card__block"><p class="search-result-card__label">
+                    Уточнення до
+                </p> <p class="search-result-card__text">
+                    29 лист. 00:00
+                </p> <p class="search-result-card__label">
+                    Оголошено
+                </p> <p class="search-result-card__label">
+                    22 лист. 2023
+                </p></div></div></div></div></li><li class="search-result__item"><div class="search-result-card"><div class="search-result-card__row"><div class="search-result-card__col search-result-card__col_first"><div><a class="search-result-card__title" href="/tender/UA-2023-11-22-012566-a">
+        Послуги з проведення модернізації Інтегрованої системи відеоспостереження та відеоаналітики міста Чорноморська за кодом ДК 021:2015: 51310000-8 Послуги зі встановлення радіо-, телевізійної, аудіо- та відеоапаратури
+    </a> <!-- --></div> <p class="search-result-card__label"><span class="c_success">Завершена</span> <span></span></p> <div class="search-result-card__description">
+                КОМУНАЛЬНА УСТАНОВА "МУНІЦИПАЛЬНА ВАРТА" ЧОРНОМОРСЬКОЇ МІСЬКОЇ РАДИ ОДЕСЬКОГО РАЙОНУ ОДЕСЬКОЇ ОБЛАСТІ
+                 • 
+                місто Чорноморськ
+            </div> <!-- --> <p class="search-result-card__description">
+            ID: UA-2023-11-22-012566-a
+        </p></div> <div class="search-result-card__col search-result-card__col_second"><div class="price medium" data-v-5ce3146a=""><p class="price__label" data-v-5ce3146a="">
+        Очікувана вартість
+    </p> <p class="price__amount c_success" data-v-5ce3146a="">
+            193 640,00
+            <span class="price__currency" data-v-5ce3146a="">
+                UAH
+
+                <!-- --></span></p></div> <div class="search-result-card__block"><p class="search-result-card__label">
+                    Уточнення до
+                </p> <p class="search-result-card__text">
+                    27 лист. 00:00
+                </p> <p class="search-result-card__label">
+                    Оголошено
+                </p> <p class="search-result-card__label">
+                    22 лист. 2023
+                </p></div></div></div></div></li><li class="search-result__item"><div class="search-result-card"><div class="search-result-card__row"><div class="search-result-card__col search-result-card__col_first"><div><a class="search-result-card__title" href="/tender/UA-2023-11-22-008150-a">
+         «Модернізація Інтегрованої системи відеоспостереження та відеоаналітики Полтавської області»
+    </a> <!-- --></div> <p class="search-result-card__label"><span class="c_success">Завершена</span> <span></span></p> <div class="search-result-card__description">
+                Головне управління Національної поліції в Полтавській області
+                 • 
+                м. Полтава
+            </div> <!-- --> <p class="search-result-card__description">
+            ID: UA-2023-11-22-008150-a
+        </p></div> <div class="search-result-card__col search-result-card__col_second"><div class="price medium" data-v-5ce3146a=""><p class="price__label" data-v-5ce3146a="">
+        Очікувана вартість
+    </p> <p class="price__amount c_success" data-v-5ce3146a="">
+            1 504 082,65
+            <span class="price__currency" data-v-5ce3146a="">
+                UAH
+
+                <!-- --></span></p></div> <div class="search-result-card__block"><p class="search-result-card__label">
+                    Уточнення до
+                </p> <p class="search-result-card__text">
+                    29 лист. 00:00
+                </p> <p class="search-result-card__label">
+                    Оголошено
+                </p> <p class="search-result-card__label">
+                    22 лист. 2023
+                </p></div></div></div></div></li><li class="search-result__item"><div class="search-result-card"><div class="search-result-card__row"><div class="search-result-card__col search-result-card__col_first"><div><a class="search-result-card__title" href="/tender/UA-2023-11-22-003941-a">
+        Комплект засобів та приладдя для розгортання системи та пристроїв нагляду та охорони
+    </a> <!-- --></div> <p class="search-result-card__label"><span class="c_success">Завершена</span> <span></span></p> <div class="search-result-card__description">
+                Військова частина 2428
+                
+                
+            </div> <!-- --> <p class="search-result-card__description">
+            ID: UA-2023-11-22-003941-a
+        </p></div> <div class="search-result-card__col search-result-card__col_second"><div class="price medium" data-v-5ce3146a=""><p class="price__label" data-v-5ce3146a="">
+        Очікувана вартість
+    </p> <p class="price__amount c_success" data-v-5ce3146a="">
+            14 621 199,00
+            <span class="price__currency" data-v-5ce3146a="">
+                UAH
+
+                <!-- --></span></p></div> <div class="search-result-card__block"><p class="search-result-card__label">
+                    Уточнення до
+                </p> <p class="search-result-card__text">
+                    27 лист. 00:00
+                </p> <p class="search-result-card__label">
+                    Оголошено
+                </p> <p class="search-result-card__label">
+                    22 лист. 2023
+                </p></div></div></div></div></li><li class="search-result__item"><div class="search-result-card"><div class="search-result-card__row"><div class="search-result-card__col search-result-card__col_first"><div><a class="search-result-card__title" href="/tender/UA-2023-11-22-003828-a">
+         Система відео спостереження у комплекті з монтажем та встановленням на території міста Зміїв Харківської області
+    </a> <!-- --></div> <p class="search-result-card__label"><span class="c_success">Завершена</span> <span></span></p> <div class="search-result-card__description">
+                КП "Зміївське ВУЖКГ"
+                 • 
+                м. Зміїв
+            </div> <!-- --> <p class="search-result-card__description">
+            ID: UA-2023-11-22-003828-a
+        </p></div> <div class="search-result-card__col search-result-card__col_second"><div class="price medium" data-v-5ce3146a=""><p class="price__label" data-v-5ce3146a="">
+        Очікувана вартість
+    </p> <p class="price__amount c_success" data-v-5ce3146a="">
+            1 600 000,00
+            <span class="price__currency" data-v-5ce3146a="">
+                UAH
+
+                <!-- --></span></p></div> <div class="search-result-card__block"><p class="search-result-card__label">
+                    Уточнення до
+                </p> <p class="search-result-card__text">
+                    29 лист. 00:00
+                </p> <p class="search-result-card__label">
+                    Оголошено
+                </p> <p class="search-result-card__label">
+                    22 лист. 2023
+                </p></div></div></div></div></li><li class="search-result__item"><div class="search-result-card"><div class="search-result-card__row"><div class="search-result-card__col search-result-card__col_first"><div><a class="search-result-card__title" href="/tender/UA-2023-11-21-018593-a">
+        Системи та пристрої нагляду та охорони
+    </a> <!-- --></div> <p class="search-result-card__label"><span class="c_success">Завершена</span> <span></span></p> <div class="search-result-card__description">
+                Територіальне управління Державної судової адміністрації України в Херсонській області
+                 • 
+                м. Херсон        
+            </div> <!-- --> <p class="search-result-card__description">
+            ID: UA-2023-11-21-018593-a
+        </p></div> <div class="search-result-card__col search-result-card__col_second"><div class="price medium" data-v-5ce3146a=""><p class="price__label" data-v-5ce3146a="">
+        Очікувана вартість
+    </p> <p class="price__amount c_success" data-v-5ce3146a="">
+            207 000,00
+            <span class="price__currency" data-v-5ce3146a="">
+                UAH
+
+                <!-- --></span></p></div> <div class="search-result-card__block"><p class="search-result-card__label">
+                    Уточнення до
+                </p> <p class="search-result-card__text">
+                    26 лист. 00:00
+                </p> <p class="search-result-card__label">
+                    Оголошено
+                </p> <p class="search-result-card__label">
+                    21 лист. 2023
+                </p></div></div></div></div></li><li class="search-result__item"><div class="search-result-card"><div class="search-result-card__row"><div class="search-result-card__col search-result-card__col_first"><div><a class="search-result-card__title" href="/tender/UA-2023-11-21-017707-a">
+        Система відеоспостереження з монтажем у Терешкіському ліцеї Терешкіської сілської ради
+    </a> <!-- --></div> <p class="search-result-card__label"><span class="c_success">Завершена</span> <span></span></p> <div class="search-result-card__description">
+                Терешківський ліцей Терешківської сільської ради Полтавського району Полтавської області
+                 • 
+                Полтавський р-н, с. Терешки
+            </div> <!-- --> <p class="search-result-card__description">
+            ID: UA-2023-11-21-017707-a
+        </p></div> <div class="search-result-card__col search-result-card__col_second"><div class="price medium" data-v-5ce3146a=""><p class="price__label" data-v-5ce3146a="">
+        Очікувана вартість
+    </p> <p class="price__amount c_success" data-v-5ce3146a="">
+            153 082,00
+            <span class="price__currency" data-v-5ce3146a="">
+                UAH
+
+                <!-- --></span></p></div> <div class="search-result-card__block"><p class="search-result-card__label">
+                    Уточнення до
+                </p> <p class="search-result-card__text">
+                    26 лист. 00:00
+                </p> <p class="search-result-card__label">
+                    Оголошено
+                </p> <p class="search-result-card__label">
+                    21 лист. 2023
+                </p></div></div></div></div></li><li class="search-result__item"><div class="search-result-card"><div class="search-result-card__row"><div class="search-result-card__col search-result-card__col_first"><div><a class="search-result-card__title" href="/tender/UA-2023-11-21-017106-a">
+        32232000-8-Обладнання для відеоконференцій
+    </a> <!-- --></div> <p class="search-result-card__label"><span class="c_success">Завершена</span> <span></span></p> <div class="search-result-card__description">
+                Військова частина 3077 Національної гвардії України
+                 • 
+                Київ
+            </div> <!-- --> <p class="search-result-card__description">
+            ID: UA-2023-11-21-017106-a
+        </p></div> <div class="search-result-card__col search-result-card__col_second"><div class="price medium" data-v-5ce3146a=""><p class="price__label" data-v-5ce3146a="">
+        Очікувана вартість
+    </p> <p class="price__amount c_success" data-v-5ce3146a="">
+            30 000,00
+            <span class="price__currency" data-v-5ce3146a="">
+                UAH
+
+                <!-- --></span></p></div> <div class="search-result-card__block"><p class="search-result-card__label">
+                    Уточнення до
+                </p> <p class="search-result-card__text">
+                    25 лист. 17:31
+                </p> <p class="search-result-card__label">
+                    Оголошено
+                </p> <p class="search-result-card__label">
+                    21 лист. 2023
+                </p></div></div></div></div></li><li class="search-result__item"><div class="search-result-card"><div class="search-result-card__row"><div class="search-result-card__col search-result-card__col_first"><div><a class="search-result-card__title" href="/tender/UA-2023-11-21-016850-a">
+        Апаратура для передавання радіосигналу з приймальним пристроєм (32232000-8 Обладнання для відеоконференцій)
+    </a> <!-- --></div> <p class="search-result-card__label"><span class="c_success">Завершена</span> <span></span></p> <div class="search-result-card__description">
+                Національний університет оборони України
+                
+                
+            </div> <!-- --> <p class="search-result-card__description">
+            ID: UA-2023-11-21-016850-a
+        </p></div> <div class="search-result-card__col search-result-card__col_second"><div class="price medium" data-v-5ce3146a=""><p class="price__label" data-v-5ce3146a="">
+        Очікувана вартість
+    </p> <p class="price__amount c_success" data-v-5ce3146a="">
+            96 000,00
+            <span class="price__currency" data-v-5ce3146a="">
+                UAH
+
+                <!-- --></span></p></div> <div class="search-result-card__block"><p class="search-result-card__label">
+                    Уточнення до
+                </p> <p class="search-result-card__text">
+                    26 лист. 00:00
+                </p> <p class="search-result-card__label">
+                    Оголошено
+                </p> <p class="search-result-card__label">
+                    21 лист. 2023
+                </p></div></div></div></div></li><li class="search-result__item"><div class="search-result-card"><div class="search-result-card__row"><div class="search-result-card__col search-result-card__col_first"><div><a class="search-result-card__title" href="/tender/UA-2023-11-21-000007-a">
+        Апаратура для передавання радіосигналу з приймальним пристроєм
+    </a> <!-- --></div> <p class="search-result-card__label"><span class="c_success">Завершена</span> <span></span></p> <div class="search-result-card__description">
+                Територіальне управління Державної судової адміністрації України в Херсонській області
+                 • 
+                м. Херсон        
+            </div> <!-- --> <p class="search-result-card__description">
+            ID: UA-2023-11-21-000007-a
+        </p></div> <div class="search-result-card__col search-result-card__col_second"><div class="price medium" data-v-5ce3146a=""><p class="price__label" data-v-5ce3146a="">
+        Очікувана вартість
+    </p> <p class="price__amount c_success" data-v-5ce3146a="">
+            979 800,00
+            <span class="price__currency" data-v-5ce3146a="">
+                UAH
+
+                <!-- --></span></p></div> <div class="search-result-card__block"><p class="search-result-card__label">
+                    Уточнення до
+                </p> <p class="search-result-card__text">
+                    26 лист. 00:00
+                </p> <p class="search-result-card__label">
+                    Оголошено
+                </p> <p class="search-result-card__label">
+                    21 лист. 2023
+                </p></div></div></div></div></li><li class="search-result__item"><div class="search-result-card"><div class="search-result-card__row"><div class="search-result-card__col search-result-card__col_first"><div><a class="search-result-card__title" href="/tender/UA-2023-11-20-015331-a">
+        Системи відеонагляду
+    </a> <!-- --></div> <p class="search-result-card__label"><span class="c_success">Завершена</span> <span></span></p> <div class="search-result-card__description">
+                Аварійно – рятувальний загін спеціального призначення Головного управління Державної служби України з надзвичайних ситуацій у Рівненській області 
+                 • 
+                М.РІВНЕ 
+            </div> <!-- --> <p class="search-result-card__description">
+            ID: UA-2023-11-20-015331-a
+        </p></div> <div class="search-result-card__col search-result-card__col_second"><div class="price medium" data-v-5ce3146a=""><p class="price__label" data-v-5ce3146a="">
+        Очікувана вартість
+    </p> <p class="price__amount c_success" data-v-5ce3146a="">
+            300 000,00
+            <span class="price__currency" data-v-5ce3146a="">
+                UAH
+
+                <!-- --></span></p></div> <div class="search-result-card__block"><p class="search-result-card__label">
+                    Уточнення до
+                </p> <p class="search-result-card__text">
+                    25 лист. 00:00
+                </p> <p class="search-result-card__label">
+                    Оголошено
+                </p> <p class="search-result-card__label">
+                    20 лист. 2023
+                </p></div></div></div></div></li></ul></div></div></div></section> <!-- --> <section class="section pt-0" style="display: none;"><!-- --></section> <section class="section"><div class="row"><ul class="paginate" data-v-44f93913=""><li data-v-44f93913=""><button class="paginate__btn prev" data-v-44f93913=""></button></li> <!-- --> <li class="paginate__visible--desktop" data-v-44f93913=""><button class="paginate__btn active" data-v-44f93913="">
+                1
+            </button></li><li class="paginate__visible--desktop paginate__d-none" data-v-44f93913=""><button class="paginate__btn not-active" data-v-44f93913="">
+                ...
+            </button></li> <li class="paginate__visible--desktop" data-v-44f93913=""><button class="paginate__btn" data-v-44f93913="">
+                2
+            </button></li><!-- --> <li class="paginate__visible--desktop" data-v-44f93913=""><button class="paginate__btn" data-v-44f93913="">
+                3
+            </button></li><!-- --> <li class="paginate__visible--desktop" data-v-44f93913=""><button class="paginate__btn" data-v-44f93913="">
+                4
+            </button></li><!-- --> <li class="paginate__visible--desktop" data-v-44f93913=""><button class="paginate__btn" data-v-44f93913="">
+                5
+            </button></li><li class="paginate__visible--desktop" data-v-44f93913=""><button class="paginate__btn not-active" data-v-44f93913="">
+                ...
+            </button></li> <li class="paginate__visible--desktop" data-v-44f93913=""><button class="paginate__btn" data-v-44f93913="">
+                26
+            </button></li> <li class="paginate__visible--mobile" data-v-44f93913=""><button class="paginate__btn not-active" data-v-44f93913="">
+            1 із 26
+        </button></li> <li data-v-44f93913=""><button class="paginate__btn next" data-v-44f93913=""></button></li></ul></div></section></div> <footer class="page-footer"><div class="row"><div class="page-footer__cols"><div class="page-footer__col"><h4 class="page-footer__col-title">
+                    ПРОЗОРРО
+                </h4> <ul class="page-footer__list"><li class="page-footer__list-item"><span><a class="link link--black page-footer__link" href="https://prozorro.gov.ua/about">
+                            Про нас
+                        </a></span></li><li class="page-footer__list-item"><span><a class="link link--black page-footer__link" href="https://prozorro.gov.ua/bugbounty">
+                            Bug bounty
+                        </a></span></li><li class="page-footer__list-item"><span><a class="link link--black page-footer__link" href="https://prozorro.gov.ua/prozorro-concessions">
+                            Прозорро концесії
+                        </a></span></li><li class="page-footer__list-item"><span><a class="link link--black page-footer__link" href="https://prozorro.gov.ua/information-security">
+                            Інформаційна безпека
+                        </a></span></li><li class="page-footer__list-item"><span><a class="link link--black page-footer__link" href="https://prozorro.gov.ua/prozorro-documents">
+                            Документи ДП "ПРОЗОРРО"
+                        </a></span></li><li class="page-footer__list-item"><span><a class="link link--black page-footer__link" href="https://prozorro.gov.ua/Prozorroplus">
+                            Prozorro+
+                        </a></span></li><li class="page-footer__list-item"><span><a class="link link--black page-footer__link" href="https://prozorro.gov.ua/roadmap">
+                            Розвиток системи
+                        </a></span></li></ul></div><div class="page-footer__col"><h4 class="page-footer__col-title">
+                    ДРУЗІ
+                </h4> <ul class="page-footer__list"><li class="page-footer__list-item"><span><a class="link link--black page-footer__link" href="https://prozorro.gov.ua/majdanchiki-prozorro">
+                            Майданчики Prozorro
+                        </a></span></li><li class="page-footer__list-item"><span><a class="link link--black page-footer__link" href="https://dozorro.org/">
+                            Дозорро
+                        </a></span></li><li class="page-footer__list-item"><span><a class="link link--black page-footer__link" href="https://prozorro.gov.ua/partners">
+                            Друзі Prozorro
+                        </a></span></li><li class="page-footer__list-item"><span><a class="link link--black page-footer__link" href="https://ips.vdz.ua/">
+                            Закупівлі з tender.me.gov.ua
+                        </a></span></li><li class="page-footer__list-item"><span><a class="link link--black page-footer__link" href="https://prozorro.gov.ua/centralizovana-zakupivelna-organizaciya">
+                            Діяльність ЦЗО
+                        </a></span></li></ul></div><div class="page-footer__col"><h4 class="page-footer__col-title">
+                    РЕСУРСИ
+                </h4> <ul class="page-footer__list"><li class="page-footer__list-item"><span><a class="link link--black page-footer__link" href="https://prozorro.gov.ua/openprocurement">
+                            Розробникам
+                        </a></span></li><li class="page-footer__list-item"><span><a class="link link--black page-footer__link" href="https://prozorro.gov.ua/for-places">
+                            Майданчикам
+                        </a></span></li><li class="page-footer__list-item"><span><a class="link link--black page-footer__link" href="https://prozorro.gov.ua/zahist-uchasnikiv">
+                            Захист учасників
+                        </a></span></li><li class="page-footer__list-item"><span><a class="link link--black page-footer__link" href="https://prozorro.gov.ua/anticorruption">
+                            Антикорупційний портал
+                        </a></span></li><li class="page-footer__list-item"><span><a class="link link--black page-footer__link" href="https://prozorro.gov.ua/faq">
+                            Запитання та відповіді
+                        </a></span></li></ul></div> <div class="page-footer__col"><h4 class="page-footer__col-title">
+                    Контакти
+                </h4> <ul class="page-footer__list"><li class="page-footer__list-item"><div>
+</div> <a class="page-footer__link" href="tel:+380442814287">
+                            +38 (044) 281-42-87
+                        </a></li><li class="page-footer__list-item"><div>
+</div> <a class="page-footer__link" href="tel:0800503400">
+                            0-800-503-400
+                        </a></li><li class="page-footer__list-item"><div>
+</div> <a class="page-footer__link page-footer__link_c_accent" href="mailto:feedback@prozorro.ua">
+                            feedback@prozorro.ua
+                        </a></li><li class="page-footer__list-item"><div>
+</div> <a class="page-footer__link page-footer__link_c_accent" href="https://docflow.prozorro.ua">
+                            Подати офіційний лист
+                        </a></li><li class="page-footer__list-item"><div>
+                            вул. Бульварно-Кудрявська, 22, м. Київ, 01601
+                        </div> <!-- --></li><li class="page-footer__list-item"><div>
+                            PR служба:
+                        </div> <a class="page-footer__link page-footer__link_c_accent" href="mailto:pr@prozorro.ua">
+                            pr@prozorro.ua
+                        </a></li> <li class="page-footer__list-item"><div class="page-footer__social social"><ul class="social__list"><li class="social__item"><a class="social__link blue social__link_tg" href="https://t.me/tendernya" target="_blank"></a></li><li class="social__item"><a class="social__link blue social__link_yt" href="https://www.youtube.com/channel/UCI-2twjrz8C4dYiQXDGZf5g" target="_blank"></a></li><li class="social__item"><a class="social__link blue social__link_fb" href="https://www.facebook.com/prozorro.gov.ua" target="_blank"></a></li></ul></div></li></ul></div></div></div></footer></div>
+</main>
+<script src="/js/browser_support.js?id=9160a9b747fb23fe33611316e1671640"></script>
+<script src="/js/app.js?id=ebe44818bbc8ade1c5ab86fbbffb225e"></script>
+</body></html>
