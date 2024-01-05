@@ -19,15 +19,15 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.firefox.options import Options
 
 # from fake_useragent import UserAgent
-binary = FirefoxBinary(r'/usr/bin/firefox')
+# binary = FirefoxBinary(r'/usr/bin/firefox')
 caps = DesiredCapabilities.FIREFOX.copy()
 caps['marionette'] = True
 # hide window of Webdriver
 options = Options()
-# options.add_argument('--headless')
+options.add_argument('--headless')
 """ Site blocks botes, we need human being for selenium"""
 #useragent = UserAgent()
-profile = webdriver.FirefoxProfile()
+# profile = webdriver.FirefoxProfile()
 # profile.set_preference("general.useragent.override", useragent.random)
 # ua = UserAgent()
 # user_agent = ua.random
@@ -38,9 +38,7 @@ profile = webdriver.FirefoxProfile()
 link = 'https://prozorro.gov.ua/search/tender?cpv=32230000-4&cpv=51310000-8&cpv=35120000-1&sort=publication_date,desc&status=complete&value.start=10000&value.end=&tender.start=2023-01-01&tender.end=2023-12-01'
 
 def driverGet(link):
-    driver = webdriver.Firefox(firefox_profile=profile, firefox_binary=binary, capabilities=caps,
-                               executable_path='/usr/bin/geckodriver',
-                               options=options)  # hide window of webdriver
+    driver = webdriver.Firefox(options=options)  # hide window of webdriver
     time.sleep(5)
     driver.get(link)
     time.sleep(5)
