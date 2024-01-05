@@ -31,7 +31,8 @@ options.add_argument('--headless')
 # options.add_argument(f'user-agent={user_agent}')
 ''' end of webdriver'''
 
-link = 'https://prozorro.gov.ua/search/tender?cpv=32230000-4&cpv=51310000-8&cpv=35120000-1&sort=publication_date,desc&status=complete&value.start=10000&value.end=&tender.start=2023-01-01&tender.end=2023-12-01'
+base_link = 'https://prozorro.gov.ua/search/tender?cpv=32230000-4&cpv=51310000-8&cpv=35120000-1&sort=publication_date,desc&status=complete&value.start=10000&value.end=&tender.start=2023-01-01&tender.end=2023-12-01'
+url = 'https://prozorro.gov.ua/tender/'
 id_values = []
 
 def driverGet(link):
@@ -61,5 +62,28 @@ def findLinks(bs): #parsing links
     # Print the list of ID values
     print(id_values)
 
-bs = driverGet(link)
+
+
+def getID(ids):
+    for i in ids:
+        target_url = f"{url}{i}"
+        print(f"Target url: {target_url}")
+        bs_subpage = driverGet(target_url)
+        # Find the div with class 'tender--head--inf'
+        tender_info_div = bs_subpage.find('div', class_='tender--head--inf')
+
+        # Extract the text content from the div
+        div_content = tender_info_div.get_text(strip=True)
+
+        # Split the content using '●' as a delimiter
+        id_parts = div_content.split('●')
+
+        # Extract the ID in hex from the second part
+        id_in_hex = id_parts[1].strip()
+
+        print(f"ID in hex: {id_in_hex}")
+
+
+bs = driverGet(base_link)
 findLinks(bs)
+getID(id_values)
