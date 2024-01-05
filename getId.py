@@ -41,6 +41,7 @@ def driverGet(link):
     driver = webdriver.Firefox(options=options)  # hide window of webdriver
     time.sleep(5)
     driver.get(link)
+    time.sleep(5)
     html = driver.page_source
     # driver.close()
     bs = BeautifulSoup(html, 'html.parser')
@@ -49,18 +50,18 @@ def driverGet(link):
 
 
 def findLinks(bs): #parsing links
-
-    # Find all elements with the class 'search-result-card__description'
-    description_elements = bs.find_all(class_='search-result-card__description')
-
-    # Extract and print the ID values
-    id_values = [element.text.strip().split("ID: ")[1] for element in description_elements]
-
-    # Print the list of ID values
-    print(id_values)
-
-    divs = bs.find_all('div', {'class': 'search-result-card__title'})
-    print(divs)
+    print(bs)
+    # # Find all elements with the class 'search-result-card__description'
+    # description_elements = bs.find_all(class_='search-result-card__description')
+    #
+    # # Extract and print the ID values
+    # id_values = [element.text.strip().split("ID: ")[1] for element in description_elements]
+    #
+    # # Print the list of ID values
+    # print(id_values)
+    #
+    # divs = bs.find_all('div', {'class': 'search-result-card__title'})
+    # print(divs)
 
 bs = driverGet(link)
 findLinks(bs)
