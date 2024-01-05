@@ -48,7 +48,7 @@ def driverGet(link):
 
 def findLinks(bs): #parsing links
     # Find all elements with the class 'search-result-card__description'
-    description_elements = soup.find_all(class_='search-result-card__description')
+    description_elements = bs.find_all(class_='search-result-card__description')
 
     # Extract and print the ID values
     for element in description_elements:
