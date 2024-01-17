@@ -9,6 +9,7 @@ import shelve
 import logging
 from pathlib import Path
 import csv
+
 ''' since update of Firefox new conditions for webdriver'''
 from selenium import webdriver
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
@@ -21,8 +22,8 @@ caps['marionette'] = True
 # hide window of Webdriver
 options = Options()
 options.add_argument('--headless')
-""" Site blocks botes, we need human being for selenium"""
-#useragent = UserAgent()
+""" Site blocks bots, we need human being for selenium"""
+# useragent = UserAgent()
 # profile = webdriver.FirefoxProfile()
 # profile.set_preference("general.useragent.override", useragent.random)
 # ua = UserAgent()
@@ -31,9 +32,10 @@ options.add_argument('--headless')
 # options.add_argument(f'user-agent={user_agent}')
 ''' end of webdriver'''
 
-base_link = 'https://prozorro.gov.ua/search/tender?cpv=32230000-4&cpv=51310000-8&cpv=35120000-1&sort=publication_date,desc&status=complete&value.start=10000&value.end=&tender.start=2023-01-01&tender.end=2023-12-01'
+base_link = 'https://prozorro.gov.ua/search/tender?cpv=32230000-4&cpv=51310000-8&cpv=35120000-1&sort=publication_date,desc&status=complete&value.start=10000&value.end=&tender.start=2023-01-01&tender.end=2023-12-31'
 url = 'https://prozorro.gov.ua/tender/'
 id_values = []
+
 
 def driverGet(link):
     driver = webdriver.Firefox(options=options)  # hide window of webdriver
@@ -47,7 +49,7 @@ def driverGet(link):
     return bs
 
 
-def findLinks(bs): #parsing links
+def findLinks(bs):  # parsing links
     # Find all elements with the class 'search-result-card__description'
     description_elements = bs.find_all(class_='search-result-card__description')
 
@@ -61,7 +63,6 @@ def findLinks(bs): #parsing links
 
     # Print the list of ID values
     print(id_values)
-
 
 
 def getID(ids):
