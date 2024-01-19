@@ -27,7 +27,7 @@ convert_to_text_with_libreoffice() {
 search_keywords() {
     full_path="$1"
     last_part=$(basename "$full_path")
-    var=$(grep -iEo 'Метобезпека|Hikvision|Tiandy|Дахуа|Токар|Тіанді' "$full_path") && echo "Keyword: $var" | tee -a $input_directory/output.log && echo "Match found: $last_part" | tee -a $input_directory/output.log
+    var=$(grep -iEo 'Dahua|Hikvision|Tiandy|Дахуа|Хіквіжн|Тіанді' "$full_path") && echo "Keyword: $var" | tee -a $input_directory/output.log && echo "Match found: $last_part" | tee -a $input_directory/output.log
 #    grep -iE 'Метобезпека|Hikvision|Tiandy|Дахуа|Токар|Тіанді' "$1" && echo "Match found in $1"
 #    grep -iE 'Dahua|Hikvision|Tiandy|Дахуа|Хіквіжні|Тіанді' "$1" && echo "Match found in $1"
 }

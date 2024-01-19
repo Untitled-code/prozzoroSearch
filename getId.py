@@ -1,28 +1,18 @@
 # get tenders id from page using bs
 
 from bs4 import BeautifulSoup
-from urllib.request import urlopen
-from urllib.request import urlretrieve
-from urllib.error import URLError, HTTPError
+import sqlite3
 import time
-import shelve
-import logging
-from pathlib import Path
-import csv
-
 ''' since update of Firefox new conditions for webdriver'''
 from selenium import webdriver
-from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.firefox.service import Service
 
+
+
+""" If a site blocks bots, we need human being for selenium"""
 # from fake_useragent import UserAgent
-caps = DesiredCapabilities.FIREFOX.copy()
-caps['marionette'] = True
-# hide window of Webdriver
-options = Options()
-options.add_argument('--headless')
-""" Site blocks bots, we need human being for selenium"""
 # useragent = UserAgent()
 # profile = webdriver.FirefoxProfile()
 # profile.set_preference("general.useragent.override", useragent.random)
@@ -32,25 +22,29 @@ options.add_argument('--headless')
 # options.add_argument(f'user-agent={user_agent}')
 ''' end of webdriver'''
 
-base_link = 'https://prozorro.gov.ua/search/tender?cpv=32230000-4&cpv=51310000-8&cpv=35120000-1&sort=publication_date,desc&status=complete&value.start=10000&value.end=&tender.start=2023-01-01&tender.end=2023-12-31'
-url = 'https://prozorro.gov.ua/tender/'
-id_values = []
 
-
-def driverGet(link):
-    driver = webdriver.Firefox(options=options)  # hide window of webdriver
-    time.sleep(5)
+def driver_get(link):
+    print(f'Work with link... {link}')
+    options = Options()
+    options.add_argument('--no-sandbox')
+    options.add_argument('--disable-dev-shm-usage')
+    options.add_argument('--headless')
+    service = Service(executable_path="/snap/bin/geckodriver")  # specify the path to your geckodriver
+    driver = webdriver.Firefox(options=options, service=service)  # hide window of webdriver
+    driver.implicitly_wait(10)
     driver.get(link)
-    time.sleep(5)
+    time.sleep(15)  # wait until page will be loaded
     html = driver.page_source
-    # driver.close()
+    driver.quit()
     bs = BeautifulSoup(html, 'html.parser')
 
     return bs
 
 
-def findLinks(bs):  # parsing links
+def find_links(bs):  # parsing links
+
     # Find all elements with the class 'search-result-card__description'
+    id_values = []
     description_elements = bs.find_all(class_='search-result-card__description')
 
     # Extract and print the ID values
@@ -62,14 +56,31 @@ def findLinks(bs):  # parsing links
             print("N/A")
 
     # Print the list of ID values
-    print(id_values)
+    print(f'Get from page ids... {id_values}')
+    return id_values
 
 
-def getID(ids):
+def paginator(soup):
+
+    # Find all buttons with the class 'paginate__btn'
+    page_buttons = soup.find_all(class_='paginate__btn')
+
+    # Extract page numbers and filter out non-numeric values
+    page_numbers = [int(button.text.strip()) for button in page_buttons if button.text.strip().isdigit()]
+
+    # Find the maximum page number
+    max_page_number = max(page_numbers) if page_numbers else 1
+
+    print(f"Number of pages: {max_page_number}")
+    return max_page_number
+
+
+def get_id(ids):
     for i in ids:
         target_url = f"{url}{i}"
         print(f"Target url: {target_url}")
-        bs_subpage = driverGet(target_url)
+        bs_subpage = driver_get(target_url)
+
         # Find the div with class 'tender--head--inf'
         tender_info_div = bs_subpage.find('div', class_='tender--head--inf')
 
@@ -83,8 +94,53 @@ def getID(ids):
         id_in_hex = id_parts[1].strip()
 
         print(f"ID in hex: {id_in_hex}")
+        id_url = [id_in_hex, target_url]
+        insert_into_table(id_url)
 
 
-bs = driverGet(base_link)
-findLinks(bs)
-getID(id_values)
+def insert_into_table(data_variable):
+    # Connect to the SQLite database (creates a new database if it doesn't exist)
+    conn = sqlite3.connect('database.db')  # Replace 'your_database.db' with your desired database name
+
+    # Create a cursor object to execute SQL queries
+    cursor = conn.cursor()
+
+    try:
+        # Insert data into the table
+        cursor.execute('''
+            INSERT INTO tenders_2023 (prozorro_id, prozorro_url)
+            VALUES (?, ?)
+        ''', (data_variable[0], data_variable[1]))
+
+        # Commit the changes to the database
+        conn.commit()
+
+        print("Data inserted successfully.")
+
+    except sqlite3.Error as e:
+        print(f"Error: {e}")
+
+    finally:
+        # Close the cursor and connection
+        cursor.close()
+        conn.close()
+
+
+if __name__ == "__main__":
+
+    # відеоспостережен
+    base_links = ['https://prozorro.gov.ua/search/tender?tender.start=2023-01-01&tender.end=2023-12-31&status=complete&text=%D0%B2%D1%96%D0%B4%D0%B5%D0%BE%D1%81%D0%BF%D0%BE%D1%81%D1%82%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%BD&sort=publication_date,desc',
+                 'https://prozorro.gov.ua/search/tender?tender.start=2023-01-01&tender.end=2023-12-31&status=complete&text=%D0%B2%D1%96%D0%B4%D0%B5%D0%BE%D0%BD%D0%B0%D0%B3%D0%BB%D1%8F%D0%B4&sort=publication_date,desc',
+                 'https://prozorro.gov.ua/search/tender?tender.start=2023-01-01&tender.end=2023-12-31&status=complete&text=%D0%B2%D1%96%D0%B4%D0%B5%D0%BE%D0%BA%D0%B0%D0%BC%D0%B5%D1%80&sort=publication_date,desc']
+
+    for base_link in base_links:
+        print(base_link)
+        url = 'https://prozorro.gov.ua/tender/'
+        bs = driver_get(base_link)
+        number_pages = paginator(bs)
+        for i in range(1, int(number_pages)):
+            sub_link = f"{base_link}&page={i}"
+            bs = driver_get(sub_link)
+            id_values = find_links(bs)
+            get_id(id_values)
+        time.sleep(600)
