@@ -152,7 +152,7 @@ def download_docs(documents_urls, id):
 #####################################
 
 if __name__ == "__main__":
-    db = 'database_test.db'
+    db = 'database.db'
     BASE_LINK = 'https://public.api.openprocurement.org/api/2.5/tenders/'
     keywords = read_from_table(db)
 
