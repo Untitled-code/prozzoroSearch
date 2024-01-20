@@ -51,7 +51,7 @@ def request(id):
         return data
 
 
-def write_to_table(data, match_keyword, match_files):
+def write_to_table(data, match_keyword, match_files, row):
     title = data['title']
     print(title)
     date_mod = data['dateModified']
@@ -82,14 +82,13 @@ def write_to_table(data, match_keyword, match_files):
     cursor = conn.cursor()
 
     try:
-
-        # Insert data into the table
         cursor.execute('''
-                INSERT INTO tenders_2023 (date_mod, title, name_buyer, code_buyer, region, locality, 
-                streetAddress, name_company, code_company, price, keyword, docs)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-            ''', (title, date_mod, name_buyer, code_buyer, region, locality, streetAddress,
-                  name_company, code_company, match_keyword, match_files, price))
+            UPDATE tenders_2023
+            SET date_mod=?, title=?, name_buyer=?, code_buyer=?, region=?, locality=?, 
+                streetAddress=?, name_company=?, code_company=?, price=?, keyword=?, docs=?
+            WHERE prozorro_id=?
+        ''', (date_mod, title, name_buyer, code_buyer, region, locality, streetAddress,
+              name_company, code_company, price, match_keyword, match_files, row))
 
         # Commit the changes to the database
         conn.commit()
@@ -153,7 +152,7 @@ def download_docs(documents_urls, id):
 #####################################
 
 if __name__ == "__main__":
-    db = 'database.db'
+    db = 'database_test.db'
     BASE_LINK = 'https://public.api.openprocurement.org/api/2.5/tenders/'
     keywords = read_from_table(db)
 
@@ -167,7 +166,7 @@ if __name__ == "__main__":
         extract_document_urls(json_data, document_urls=document_urls)
         folder = download_docs(document_urls, keyword)
         match_keyword, match_files = check_files(folder)
-        write_to_table(json_data, match_keyword, match_files)
+        write_to_table(json_data, match_keyword, match_files, keyword)
 
     print("_______________Done!_______________")
     logging.debug("________________Done!________________")
