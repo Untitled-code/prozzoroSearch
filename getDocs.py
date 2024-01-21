@@ -20,7 +20,9 @@ def read_from_table(db):
     cursor = conn.cursor()
 
     try:
-        cursor.execute("SELECT prozorro_id FROM tenders_2023")
+
+        # skipping already filled rows
+        cursor.execute("SELECT * FROM tenders_2023 WHERE title is NULL;")
         rows = cursor.fetchall()
 
         for row in rows:
