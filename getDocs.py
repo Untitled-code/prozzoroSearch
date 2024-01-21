@@ -93,8 +93,13 @@ def write_to_table(data, match_keyword, match_files, row):
     code_company = identifier_company.get('id', None)
     print(code_company)
 
-    print(match_keyword)
-    print(match_files)
+    # Convert the set to a comma-separated string
+    keywords_str = ', '.join(match_keyword)
+    print(keywords_str)
+
+    # Convert the set to a comma-separated string
+    filenames_str = ', '.join(match_files)
+    print(filenames_str)
 
     contracts = data.get('contracts', [])
 
@@ -116,7 +121,7 @@ def write_to_table(data, match_keyword, match_files, row):
                 streetAddress=?, name_company=?, code_company=?, price=?, keyword=?, docs=?
             WHERE prozorro_id=?
         ''', (date_mod, title, name_buyer, code_buyer, region, locality, streetAddress,
-              name_company, code_company, price, match_keyword, match_files, row))
+              name_company, code_company, price, keywords_str, filenames_str, row))
 
         # Commit the changes to the database
         conn.commit()
@@ -124,7 +129,7 @@ def write_to_table(data, match_keyword, match_files, row):
         print("Data inserted successfully.")
 
     except sqlite3.Error as e:
-        print(f"Error: {e}")
+        print(f"Error writing to db: {e}")
 
     finally:
         # Close the cursor and connection
