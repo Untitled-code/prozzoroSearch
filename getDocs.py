@@ -52,27 +52,53 @@ def request(id):
 
 
 def write_to_table(data, match_keyword, match_files, row):
-    title = data['title']
+    title = data.get('title', None)
     print(title)
-    date_mod = data['dateModified']
+
+    date_mod = data.get('dateModified', None)
     print(date_mod)
-    name_buyer = data['procuringEntity']['name']
+
+    procuring_entity = data.get('procuringEntity', {})
+
+    name_buyer = procuring_entity.get('name', None)
     print(name_buyer)
-    code_buyer = data['procuringEntity']['identifier']['id']
+
+    identifier = procuring_entity.get('identifier', {})
+
+    code_buyer = identifier.get('id', None)
     print(code_buyer)
-    region = data['procuringEntity']['address']['region']
+
+    address = procuring_entity.get('address', {})
+
+    region = address.get('region', None)
     print(region)
-    locality = data['procuringEntity']['address']['locality']
+
+    locality = address.get('locality', None)
     print(locality)
-    streetAddress = data['procuringEntity']['address']['streetAddress']
+
+    streetAddress = address.get('streetAddress', None)
     print(streetAddress)
-    name_company = data['awards'][0]['suppliers'][0]['name']
+
+    awards = data.get('awards', [])
+
+    suppliers = awards[0]['suppliers'] if awards and 'suppliers' in awards[0] else []
+
+    name_company = suppliers[0].get('name', None) if suppliers else None
     print(name_company)
-    code_company = data['awards'][0]['suppliers'][0]['identifier']['id']
+
+    identifier_company = suppliers[0].get('identifier', {}) if suppliers else {}
+
+    code_company = identifier_company.get('id', None)
     print(code_company)
+
     print(match_keyword)
     print(match_files)
-    price = data['contracts'][0]['value']['amount']
+
+    contracts = data.get('contracts', [])
+
+    value = contracts[0]['value'] if contracts else {}
+
+    price = value.get('amount', None)
     print(price)
 
     # Connect to the SQLite database (creates a new database if it doesn't exist)
