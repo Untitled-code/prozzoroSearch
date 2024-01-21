@@ -165,7 +165,9 @@ def download_docs(documents_urls, id):
             response = requests.get(doc_urls['urls'][i])
 
             if response.status_code == 200:
-                file_path = os.path.join(folder_name, doc_urls['title'][i])
+                # Example: Truncate the file name to a maximum length of 100 characters
+                truncated_name = doc_urls['title'][i][:100]
+                file_path = os.path.join(folder_name, truncated_name)
                 with open(file_path, "wb") as file:
                     file.write(response.content)
                 print(f"File saved... {doc_urls['title'][i]} saved to... {file_path}")
