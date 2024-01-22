@@ -95,14 +95,14 @@ def write_to_table(data, match_keyword, match_files, row):
     print(code_company)
 
     # Convert the set to a comma-separated string
-    if match_keyword is not 'none':
+    if match_keyword != 'none':
         keywords_str = ', '.join(match_keyword)
         print(keywords_str)
     else:
         keywords_str = match_keyword
 
     # Convert the set to a comma-separated string
-    if match_files is not 'none':
+    if match_files != 'none':
         filenames_str = ', '.join(match_files)
         print(filenames_str)
     else:
