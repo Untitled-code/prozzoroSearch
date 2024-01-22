@@ -1,6 +1,7 @@
 import sqlite3
 import requests
 from retry import retry
+import hashlib
 import time
 import sys
 import logging, json
@@ -94,12 +95,18 @@ def write_to_table(data, match_keyword, match_files, row):
     print(code_company)
 
     # Convert the set to a comma-separated string
-    keywords_str = ', '.join(match_keyword)
-    print(keywords_str)
+    if match_keyword is not 'none':
+        keywords_str = ', '.join(match_keyword)
+        print(keywords_str)
+    else:
+        keywords_str = match_keyword
 
     # Convert the set to a comma-separated string
-    filenames_str = ', '.join(match_files)
-    print(filenames_str)
+    if match_files is not 'none':
+        filenames_str = ', '.join(match_files)
+        print(filenames_str)
+    else:
+        filenames_str = match_files
 
     contracts = data.get('contracts', [])
 
@@ -154,20 +161,27 @@ def extract_document_urls(data, current_path="", document_urls=[]):
             extract_document_urls(item, new_path, document_urls)
 
 
+def sanitize_file_name(file_name):
+    # Replace invalid characters with underscores
+    invalid_chars = r'\/:*?"<>|'
+    sanitized_name = ''.join(c if c not in invalid_chars else '_' for c in file_name)
+    return sanitized_name
+
 def download_docs(documents_urls, id):
     folder_name = os.path.join(folder_path, id)
     if not os.path.exists(folder_name):
         os.makedirs(folder_name)
     for doc_urls in documents_urls:
         for i in range(len(doc_urls['urls'])):
-            print(f"Title: {doc_urls['title'][i]}, URLs: {doc_urls['urls'][i]}")
+            # Example: Truncate the file name to a maximum length of 100 characters
+            truncated_name = doc_urls['title'][i][:100]
+            sanitized_title = sanitize_file_name(truncated_name)
+            print(f"Title: {truncated_name}, URLs: {doc_urls['urls'][i]}")
             print("Download begin")
             response = requests.get(doc_urls['urls'][i])
 
             if response.status_code == 200:
-                # Example: Truncate the file name to a maximum length of 100 characters
-                truncated_name = doc_urls['title'][i][:100]
-                file_path = os.path.join(folder_name, truncated_name)
+                file_path = os.path.join(folder_name, sanitized_title)
                 with open(file_path, "wb") as file:
                     file.write(response.content)
                 print(f"File saved... {doc_urls['title'][i]} saved to... {file_path}")
