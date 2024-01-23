@@ -1,17 +1,13 @@
 import sqlite3
 import requests
 from retry import retry
-import hashlib
-import time
-import sys
 import logging, json
-import csv
 import os
 import json
 import zipfile
 from find_matches import check_files
 
-logging.basicConfig(filename='getDocs.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='getDocs.log', level=logging.DEBUG, format='%(pastime)s - %(levelness)s - %(message)s')
 logging.debug('Start of program')
 
 
