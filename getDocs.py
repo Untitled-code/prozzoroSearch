@@ -55,32 +55,40 @@ def request(id):
 
 
 def write_to_table(data, match_keyword, match_files, row):
+    logging.debug(f'Inserting data for tender id... {keyword}')
     title = data.get('title', None)
     print(title)
+    logging.debug(title)
 
     date_mod = data.get('dateModified', None)
     print(date_mod)
+    logging.debug(date_mod)
 
     procuring_entity = data.get('procuringEntity', {})
 
     name_buyer = procuring_entity.get('name', None)
     print(name_buyer)
+    logging.debug(name_buyer)
 
     identifier = procuring_entity.get('identifier', {})
 
     code_buyer = identifier.get('id', None)
     print(code_buyer)
+    logging.debug(code_buyer)
 
     address = procuring_entity.get('address', {})
 
     region = address.get('region', None)
     print(region)
+    logging.debug(region)
 
     locality = address.get('locality', None)
     print(locality)
+    logging.debug(locality)
 
     streetAddress = address.get('streetAddress', None)
     print(streetAddress)
+    logging.debug(streetAddress)
 
     awards = data.get('awards', [])
 
@@ -88,25 +96,29 @@ def write_to_table(data, match_keyword, match_files, row):
 
     name_company = suppliers[0].get('name', None) if suppliers else None
     print(name_company)
+    logging.debug(name_company)
 
     identifier_company = suppliers[0].get('identifier', {}) if suppliers else {}
 
     code_company = identifier_company.get('id', None)
     print(code_company)
+    logging.debug(code_company)
 
     # Convert the set to a comma-separated string
     if match_keyword != 'none':
         keywords_str = ', '.join(match_keyword)
-        print(keywords_str)
     else:
         keywords_str = match_keyword
+    print(f'Keyword added: {keywords_str}')
+    logging.debug(f'Keyword added: {keywords_str}')
 
     # Convert the set to a comma-separated string
     if match_files != 'none':
         filenames_str = ', '.join(match_files)
-        print(filenames_str)
     else:
         filenames_str = match_files
+    print(f'Filename added: {filenames_str}')
+    logging.debug(f'Filename added: {filenames_str}')
 
     contracts = data.get('contracts', [])
 
@@ -134,9 +146,11 @@ def write_to_table(data, match_keyword, match_files, row):
         conn.commit()
 
         print("Data inserted successfully.")
+        logging.debug("Data inserted successfully.")
 
     except sqlite3.Error as e:
         print(f"Error writing to db: {e}")
+        logging.debug(f"Error writing to db: {e}")
 
     finally:
         # Close the cursor and connection
@@ -173,27 +187,34 @@ def download_docs(documents_urls, id):
         os.makedirs(folder_name)
     for doc_urls in documents_urls:
         for i in range(len(doc_urls['urls'])):
+            title = doc_urls['title'][i]
             # Example: Truncate the file name to a maximum length of 100 characters
-            truncated_name = doc_urls['title'][i][:100]
+            truncated_name = title[:100]
             sanitized_title = sanitize_file_name(truncated_name)
             print(f"Title: {truncated_name}, URLs: {doc_urls['urls'][i]}")
             print("Download begin")
-            response = requests.get(doc_urls['urls'][i])
 
-            if response.status_code == 200:
-                file_path = os.path.join(folder_name, sanitized_title)
-                with open(file_path, "wb") as file:
-                    file.write(response.content)
-                print(f"File saved... {doc_urls['title'][i]} saved to... {file_path}")
+            try:
+                # Check if the URL is not None
+                if doc_urls['urls'][i] is not None:
+                    response = requests.get(doc_urls['urls'][i])
 
-                if file_path.endswith(".zip"):
-                    # extract_folder = os.path.join(folder_name, "extracted")
-                    with zipfile.ZipFile(file_path, 'r') as zip_ref:
-                        zip_ref.extractall(folder_name)
+                    if response.status_code == 200:
+                        file_path = os.path.join(folder_name, sanitized_title)
+                        with open(file_path, "wb") as file:
+                            file.write(response.content)
+                        print(f"File saved... {sanitized_title} saved to... {file_path}")
 
-                    print(f"Extracted contents of {doc_urls['title'][i]} to {folder_name}")
-            else:
-                print(f"Failed to download document {doc_urls['title'][i]}. Status code: {response.status_code}")
+                        if file_path.endswith(".zip"):
+                            with zipfile.ZipFile(file_path, 'r') as zip_ref:
+                                zip_ref.extractall(folder_name)
+                            print(f"Extracted contents of {sanitized_title} to {folder_name}")
+                    else:
+                        print(f"Failed to download document {title}. Status code: {response.status_code}")
+                else:
+                    print(f"Skipping document {title} because the URL is None.")
+            except Exception as e:
+                print(f"Error downloading document {title}: {e}")
 
     return folder_name
 
