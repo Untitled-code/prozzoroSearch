@@ -7,7 +7,7 @@ import json
 import zipfile
 from find_matches import check_files
 
-logging.basicConfig(filename='getDocs.log', level=logging.DEBUG, format='%(pastime)s - %(levelness)s - %(message)s')
+logging.basicConfig(filename='getDocs.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 logging.debug('Start of program')
 
 
