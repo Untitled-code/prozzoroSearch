@@ -129,9 +129,9 @@ def insert_into_table(data_variable):
 if __name__ == "__main__":
 
     # відеоспостережен
-    base_links = ['https://prozorro.gov.ua/search/tender?tender.start=2023-01-01&tender.end=2023-12-31&status=complete&text=%D0%B2%D1%96%D0%B4%D0%B5%D0%BE%D1%81%D0%BF%D0%BE%D1%81%D1%82%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%BD&sort=publication_date,desc',
-                 'https://prozorro.gov.ua/search/tender?tender.start=2023-01-01&tender.end=2023-12-31&status=complete&text=%D0%B2%D1%96%D0%B4%D0%B5%D0%BE%D0%BD%D0%B0%D0%B3%D0%BB%D1%8F%D0%B4&sort=publication_date,desc',
-                 'https://prozorro.gov.ua/search/tender?tender.start=2023-01-01&tender.end=2023-12-31&status=complete&text=%D0%B2%D1%96%D0%B4%D0%B5%D0%BE%D0%BA%D0%B0%D0%BC%D0%B5%D1%80&sort=publication_date,desc']
+    base_links = ['https://prozorro.gov.ua/search/tender?tender.start=2022-01-01&tender.end=2022-12-31&status=complete&text=%D0%B2%D1%96%D0%B4%D0%B5%D0%BE%D1%81%D0%BF%D0%BE%D1%81%D1%82%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%BD&sort=publication_date,desc',
+                 'https://prozorro.gov.ua/search/tender?tender.start=2022-01-01&tender.end=2022-12-31&status=complete&text=%D0%B2%D1%96%D0%B4%D0%B5%D0%BE%D0%BD%D0%B0%D0%B3%D0%BB%D1%8F%D0%B4&sort=publication_date,desc',
+                 'https://prozorro.gov.ua/search/tender?tender.start=2022-01-01&tender.end=2022-12-31&status=complete&text=%D0%B2%D1%96%D0%B4%D0%B5%D0%BE%D0%BA%D0%B0%D0%BC%D0%B5%D1%80&sort=publication_date,desc']
 
     for base_link in base_links:
         print(base_link)
